@@ -163,9 +163,8 @@ def footer():
         <img src="/assets/images/logo-full-web.png" alt="UK Study Abroad" width="220">
         <p>Independent UK study-abroad consultancy helping students plan, apply and get visa-ready for university life in the United Kingdom — with dedicated support for students applying from Saudi Arabia.</p>
         <div class="footer-social" aria-label="Social media">
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1Z"/></svg></a>
-          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a>
+          <a href="https://www.instagram.com/ukstudyabroadofficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+          <a href="https://www.facebook.com/ukstudyabroad" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1Z"/></svg></a>
           <a href="{whatsapp_link()}" target="_blank" rel="noopener" aria-label="WhatsApp">{ICONS['whatsapp']}</a>
         </div>
       </div>
@@ -193,7 +192,7 @@ def footer():
         <h5>Get in Touch</h5>
         <div class="contact-line">{ICONS['mail']}<a href="mailto:{EMAIL}">{EMAIL}</a></div>
         <div class="contact-line">{ICONS['whatsapp']}<a href="{whatsapp_link()}" target="_blank" rel="noopener">{WHATSAPP_DISPLAY}</a></div>
-        <div class="contact-line">{ICONS['pin']}<span>Registered office: GoDaddy domain ukstudyabroad.co.uk — serving students across the Kingdom of Saudi Arabia (Riyadh · Jeddah · Dammam) and beyond.</span></div>
+        <div class="contact-line">{ICONS['pin']}<span>London, United Kingdom — serving students across the Kingdom of Saudi Arabia (Riyadh · Jeddah · Dammam) and beyond.</span></div>
         <a href="/contact.html" class="btn btn-outline btn-sm" style="margin-top:8px;">Contact Us</a>
       </div>
     </div>
