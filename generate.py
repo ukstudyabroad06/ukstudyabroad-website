@@ -98,13 +98,13 @@ home_body = f"""
       <h2>Popular UK cities for international students</h2>
       <p>Every city offers a different UK experience. We'll help you weigh cost of living, course options and community against what matters most to you.</p>
     </div>
-    <div class="grid grid-3">
-      {city_tile('London', 'Global finance, culture &amp; Russell Group universities', 0)}
-      {city_tile('Manchester', 'Vibrant, affordable, major research universities', 1)}
-      {city_tile('Birmingham', 'Central location, strong business schools', 2)}
-      {city_tile('Edinburgh', 'Historic city, world-ranked institutions', 3)}
-      {city_tile('Coventry', 'Modern campuses, welcoming international community', 4)}
-      {city_tile('Glasgow', 'Affordable living, strong engineering &amp; medicine', 5)}
+    <div class="dest-list">
+      {city_tile('London', 'Global finance, culture &amp; Russell Group universities', 0, 'Capital City')}
+      {city_tile('Manchester', 'Vibrant, affordable, major research universities', 1, 'Best Value')}
+      {city_tile('Birmingham', 'Central location, strong business schools', 2, 'Central Hub')}
+      {city_tile('Edinburgh', 'Historic city, world-ranked institutions', 3, 'Historic Charm')}
+      {city_tile('Coventry', 'Modern campuses, welcoming international community', 4, 'Community Focus')}
+      {city_tile('Glasgow', 'Affordable living, strong engineering &amp; medicine', 5, 'Affordable Living')}
     </div>
     <div style="text-align:center;margin-top:40px;">
       <a class="btn btn-outline" href="/destinations.html">Explore All Destinations {ICONS['arrow-right']}</a>
@@ -428,16 +428,16 @@ destinations_body = f"""
       <h2>Where students choose to study</h2>
       <p>Every city offers a different balance of cost, culture and course options. We'll help you weigh them against your own priorities.</p>
     </div>
-    <div class="grid grid-3">
-      {city_tile('London', 'Global finance &amp; Russell Group universities', 0)}
-      {city_tile('Manchester', 'Vibrant, affordable, major research universities', 1)}
-      {city_tile('Birmingham', 'Central location, strong business schools', 2)}
-      {city_tile('Edinburgh', 'Historic city, world-ranked institutions', 3)}
-      {city_tile('Coventry', 'Modern campuses, welcoming international community', 4)}
-      {city_tile('Glasgow', 'Affordable living, strong engineering &amp; medicine', 5)}
-      {city_tile('Leeds', 'Large student population, strong law &amp; business', 6)}
-      {city_tile('Sheffield', 'Friendly city, respected engineering faculties', 7)}
-      {city_tile('Cardiff', "Compact capital, growing international intake", 0)}
+    <div class="dest-list">
+      {city_tile('London', 'Global finance &amp; Russell Group universities', 0, 'Capital City')}
+      {city_tile('Manchester', 'Vibrant, affordable, major research universities', 1, 'Best Value')}
+      {city_tile('Birmingham', 'Central location, strong business schools', 2, 'Central Hub')}
+      {city_tile('Edinburgh', 'Historic city, world-ranked institutions', 3, 'Historic Charm')}
+      {city_tile('Coventry', 'Modern campuses, welcoming international community', 4, 'Community Focus')}
+      {city_tile('Glasgow', 'Affordable living, strong engineering &amp; medicine', 5, 'Affordable Living')}
+      {city_tile('Leeds', 'Large student population, strong law &amp; business', 6, 'Student Hub')}
+      {city_tile('Sheffield', 'Friendly city, respected engineering faculties', 7, 'Engineering Hub')}
+      {city_tile('Cardiff', "Compact capital, growing international intake", 8, 'Compact Capital')}
     </div>
   </div>
 </section>

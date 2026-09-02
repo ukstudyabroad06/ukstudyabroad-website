@@ -233,36 +233,17 @@ def decorative_panel(icon_key, big_label, small_label="", variant="brand"):
 </div>"""
 
 
-SKYLINE_SVG = '''<svg class="skyline" viewBox="0 0 400 140" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
-<rect x="0" y="70" width="34" height="70"/><rect x="38" y="40" width="26" height="100"/>
-<rect x="68" y="85" width="30" height="55"/><rect x="102" y="20" width="22" height="120"/>
-<rect x="128" y="60" width="34" height="80"/><rect x="166" y="45" width="20" height="95"/>
-<polygon points="186,45 196,15 206,45"/><rect x="210" y="75" width="30" height="65"/>
-<rect x="244" y="30" width="24" height="110"/><rect x="272" y="65" width="34" height="75"/>
-<rect x="310" y="50" width="22" height="90"/><rect x="336" y="80" width="30" height="60"/>
-<rect x="370" y="35" width="26" height="105"/>
-</svg>'''
-
-CITY_GRADIENTS = [
-    "linear-gradient(160deg, var(--navy-800), var(--teal-700))",
-    "linear-gradient(160deg, var(--purple-700), var(--navy-800))",
-    "linear-gradient(160deg, var(--teal-700), var(--purple-600))",
-    "linear-gradient(160deg, var(--navy-900), var(--purple-500))",
-    "linear-gradient(160deg, var(--teal-600), var(--navy-800))",
-    "linear-gradient(160deg, var(--purple-600), var(--teal-700))",
-    "linear-gradient(160deg, var(--navy-800), var(--gold-500))",
-    "linear-gradient(160deg, var(--purple-700), var(--teal-600))",
-]
-
-
-def city_tile(name, tagline, i):
-    grad = CITY_GRADIENTS[i % len(CITY_GRADIENTS)]
-    return f"""<div class="city-tile" style="background:{grad};">
-  <div class="pattern"></div>
-  {SKYLINE_SVG}
-  <div class="cap">{ICONS['cap']}</div>
-  <h4>{name}</h4>
-  <span>{tagline}</span>
+def city_tile(name, tagline, i, tag=""):
+    """Renders one row in the photo-free destinations list."""
+    tag_html = f'<span class="dest-row-tag">{tag}</span>' if tag else ""
+    return f"""<div class="dest-row" data-reveal>
+  <span class="dest-row-index">{str(i + 1).zfill(2)}</span>
+  <div class="dest-row-main">
+    <h4>{name}</h4>
+    <p>{tagline}</p>
+  </div>
+  {tag_html}
+  <span class="dest-row-arrow">{ICONS['arrow-right']}</span>
 </div>"""
 
 
