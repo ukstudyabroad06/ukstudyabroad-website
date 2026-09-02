@@ -27,7 +27,7 @@ No framework, no build step required to run — plain HTML5, CSS3 and vanilla Ja
 │   └── images/                Logo, favicons, social-share image (all web-optimised)
 ├── brand-assets/              High-resolution original logo files (for print/social — not used by the site)
 ├── build.py / generate.py     Optional dev tool that generated the HTML above (see §6)
-├── _headers / _redirects      Cloudflare Pages config (security headers, clean URLs)
+├── _headers                   Cloudflare Pages config (security headers, caching)
 ├── robots.txt / sitemap.xml   Basic SEO
 └── site.webmanifest
 ```
@@ -75,6 +75,8 @@ This is the exact order you asked for. Total time: ~20 minutes plus DNS propagat
    - **Build command:** *(leave empty)*
    - **Build output directory:** `/`
 5. Click **Save and Deploy**. Cloudflare builds and gives you a live URL like `ukstudyabroad-website.pages.dev` within a minute or two — open it and click through the site to confirm everything works.
+
+> **Note:** Cloudflare Pages automatically serves clean, extension-less URLs for static HTML sites — `/about.html` is already reachable at both `/about.html` and `/about` with no configuration needed. An earlier version of this repo included a custom `_redirects` file to force this, which actually conflicted with Cloudflare's own automatic behavior and caused a "Latest build failed — infinite loop detected" error. That file has been removed; if you still have it locally, delete it, commit, and push again.
 
 ### Step 3 — Point your GoDaddy domain to Cloudflare
 
