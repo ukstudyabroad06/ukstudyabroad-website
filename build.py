@@ -266,6 +266,17 @@ def city_tile(name, tagline, i):
 </div>"""
 
 
+def testimonial(initial, quote, name, detail):
+    """Renders one testimonial card. Not called anywhere yet — wire this up on
+    testimonials.html (and optionally the home page) once you have real,
+    verified student reviews to publish. Never call this with invented quotes."""
+    return f"""<div class="testimonial-card" data-reveal>
+  <div class="stars">★★★★★</div>
+  <blockquote>&ldquo;{quote}&rdquo;</blockquote>
+  <div class="testimonial-person"><div class="avatar-initial">{initial}</div><div><strong>{name}</strong><span>{detail}</span></div></div>
+</div>"""
+
+
 def check_list(items):
     lis = "\n".join(
         f'<li class="check-item"><span class="check-icon">{ICONS["check-circle"]}</span><span>{item}</span></li>'

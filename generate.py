@@ -136,29 +136,14 @@ home_body = f"""
 <section>
   <div class="container">
     <div class="section-head center">
-      <div class="eyebrow">Student Voices</div>
-      <h2>What students say about working with us</h2>
+      <div class="eyebrow">Why Students Choose Us</div>
+      <h2>What you can expect from working with us</h2>
     </div>
-    <div class="sample-note">These are sample/illustrative testimonials shown for design purposes. Replace with real, verified student reviews before publishing this site live.</div>
-    <div class="grid grid-3">
-      <div class="testimonial-card" data-reveal>
-        <div class="stars">★★★★★</div>
-        <blockquote>"I had no idea where to start with my UK application. The team explained everything in a way that actually made sense and stayed with me through the whole visa process."</blockquote>
-        <div class="testimonial-person"><div class="avatar-initial">R</div><div><strong>Rakan A.</strong><span>Riyadh — Business Management, Coventry University</span></div></div>
-      </div>
-      <div class="testimonial-card" data-reveal>
-        <div class="stars">★★★★★</div>
-        <blockquote>"Fast replies on WhatsApp made all the difference. I always knew what documents I needed next and never felt lost."</blockquote>
-        <div class="testimonial-person"><div class="avatar-initial">L</div><div><strong>Lama S.</strong><span>Jeddah — Computer Science, University of Hertfordshire</span></div></div>
-      </div>
-      <div class="testimonial-card" data-reveal>
-        <div class="stars">★★★★★</div>
-        <blockquote>"They helped me understand the IELTS score I actually needed instead of overselling expensive test prep. Honest advice from start to finish."</blockquote>
-        <div class="testimonial-person"><div class="avatar-initial">F</div><div><strong>Faisal M.</strong><span>Dammam — Mechanical Engineering, Northumbria University</span></div></div>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:36px;">
-      <a class="btn btn-outline" href="/testimonials.html">Read More Stories {ICONS['arrow-right']}</a>
+    <div class="grid grid-4">
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['chat']}</div><h3>Free, No-Pressure Advice</h3><p>An honest first conversation with no obligation to sign up for anything.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['headset']}</div><h3>Fast WhatsApp Replies</h3><p>Real answers within 24-48 hours, in Saudi Arabia-friendly hours.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['shield']}</div><h3>Visa-Aware Guidance</h3><p>Every recommendation accounts for your Student visa eligibility from day one.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['target']}</div><h3>Matched, Not Mass-Marketed</h3><p>Course and university suggestions based on your grades and goals — not a fixed list.</p></div>
     </div>
   </div>
 </section>
@@ -637,29 +622,28 @@ visa_body = f"""
 """
 
 # ==========================================================================
-# TESTIMONIALS
+# TESTIMONIALS (kept content-free of fabricated reviews — see note below)
 # ==========================================================================
-def testimonial(initial, quote, name, detail):
-    return f"""<div class="testimonial-card" data-reveal>
-  <div class="stars">★★★★★</div>
-  <blockquote>&ldquo;{quote}&rdquo;</blockquote>
-  <div class="testimonial-person"><div class="avatar-initial">{initial}</div><div><strong>{name}</strong><span>{detail}</span></div></div>
-</div>"""
-
+# This page intentionally does not include any student quotes: we only
+# publish real, verified reviews (with permission) once we have them. Update
+# this page directly once your first cohort of students is ready to share
+# feedback — a `testimonial()` helper and card styling already exist in
+# build.py/style.css and can be reused at that point.
 testimonials_body = f"""
 <main id="main">
-{page_hero('Testimonials', 'What students say about us', 'Real feedback matters more to us than polished marketing. Here is what working with UK Study Abroad is designed to feel like.', 'Testimonials')}
+{page_hero('Testimonials', "We're just getting started", 'UK Study Abroad launched to serve students in Saudi Arabia, and we only publish real, verified reviews from students we&rsquo;ve actually worked with — never invented ones. This page will fill up as our first cohort completes their journey.', 'Testimonials')}
 
 <section>
   <div class="container">
-    <div class="sample-note">Important: the testimonials below are sample/illustrative content included as a design placeholder. Replace them with real, verified student reviews (with their permission) before this site goes live &mdash; never publish fabricated reviews as genuine.</div>
-    <div class="grid grid-3">
-      {testimonial('R', "I had no idea where to start with my UK application. The team explained everything in a way that actually made sense and stayed with me through the whole visa process.", 'Rakan A.', 'Riyadh — Business Management, Coventry University')}
-      {testimonial('L', "Fast replies on WhatsApp made all the difference. I always knew what documents I needed next and never felt lost.", 'Lama S.', 'Jeddah — Computer Science, University of Hertfordshire')}
-      {testimonial('F', "They helped me understand the IELTS score I actually needed instead of overselling expensive test prep. Honest advice from start to finish.", 'Faisal M.', 'Dammam — Mechanical Engineering, Northumbria University')}
-      {testimonial('N', "As a parent, I appreciated how clearly they explained the visa financial requirements. Everything was transparent, step by step.", "Noura's Father", 'Riyadh — Parent of an Undergraduate Student')}
-      {testimonial('O', "My first choice university didn't work out, but my advisor helped me find an even better-fit course within two days.", 'Omar K.', 'Khobar — Law, University of Leeds')}
-      {testimonial('H', "Pre-departure support made my first week in the UK so much easier — I knew exactly what to do before I even landed.", 'Hessa A.', 'Jeddah — Architecture, University of Sheffield')}
+    <div class="section-head center">
+      <div class="eyebrow">In the Meantime</div>
+      <h2>What you can expect from working with us</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['chat']}</div><h3>Free, No-Pressure Advice</h3><p>An honest first conversation with no obligation to sign up for anything.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['headset']}</div><h3>Fast WhatsApp Replies</h3><p>Real answers within 24-48 hours, in Saudi Arabia-friendly hours.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['shield']}</div><h3>Visa-Aware Guidance</h3><p>Every recommendation accounts for your Student visa eligibility from day one.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['target']}</div><h3>Matched, Not Mass-Marketed</h3><p>Course and university suggestions based on your grades and goals — not a fixed list.</p></div>
     </div>
   </div>
 </section>
@@ -668,7 +652,7 @@ testimonials_body = f"""
   <div class="container">
     <div class="cta-banner" data-reveal>
       <div class="container-inner">
-        <div><h2>Want to be our next success story?</h2><p>Book a free consultation and let's talk about your UK university plans.</p></div>
+        <div><h2>Want to be our first success story?</h2><p>Book a free consultation and let's talk about your UK university plans.</p></div>
         <div class="cta-actions">
           <a class="btn btn-whatsapp" href="{whatsapp_link()}" target="_blank" rel="noopener">{ICONS['whatsapp']} WhatsApp Us</a>
         </div>
