@@ -13,24 +13,25 @@ home_body = f"""
 <section class="hero">
   <div class="container">
     <div>
-      <span class="hero-eyebrow">{ICONS['star']} Trusted UK Study Abroad Consultancy</span>
-      <h1>Start your journey to a <span>UK university</span>, with confidence.</h1>
-      <p class="lead">UK Study Abroad guides students step by step — from choosing the right course to landing in the United Kingdom. We're proudly supporting students from Saudi Arabia as our founding market, with plans to serve students across the region.</p>
+      <span class="hero-eyebrow">{ICONS['star']} UK Study Abroad Consultancy</span>
+      <h1>Your complete pathway to <span>studying in the UK</span>.</h1>
+      <p class="lead">From short courses and IELTS preparation to university recruitment, degree placement and our own live online to UK academic programme, we help ambitious students from Saudi Arabia find the right path to studying and succeeding in the UK.</p>
+      <p style="margin:-14px 0 26px;color:var(--muted);font-size:0.98rem;">Our team includes genuine UK university lecturers and professors, so every step of your journey is backed by real academic expertise, not just paperwork.</p>
       <div class="hero-cta">
-        <a class="btn btn-whatsapp" href="{whatsapp_link()}" target="_blank" rel="noopener">{ICONS['whatsapp']} Chat on WhatsApp</a>
-        <a class="btn btn-outline-light" href="/contact.html">Book a Free Consultation</a>
+        <a class="btn btn-whatsapp" href="/services.html">{ICONS['book']} Explore Our Services</a>
+        <a class="btn btn-outline-light" href="/schools.html">For Schools &amp; Colleges</a>
       </div>
       <div class="hero-trust">
-        <div><strong>Free</strong><span>Initial Consultation</span></div>
-        <div><strong>Riyadh &amp; Jeddah</strong><span>Friendly Support Hours</span></div>
-        <div><strong>End-to-End</strong><span>Application to Arrival</span></div>
+        <div><strong>5 Services</strong><span>One Trusted Study Abroad Partner</span></div>
+        <div><strong>UK Academics</strong><span>Real Lecturers &amp; Professors on Our Team</span></div>
+        <div><strong>Saudi Arabia</strong><span>Direct Support for Families &amp; Schools</span></div>
       </div>
     </div>
     <div class="hero-visual" data-reveal>
-      <img src="/assets/images/logo-full-web.png" alt="UK Study Abroad — Your Future, Our Mission" loading="eager">
+      <img src="/assets/images/logo-full-web.png" alt="UK Study Abroad. Learn Online. Think Globally. Experience the UK." loading="eager">
       <div class="hero-badge">
-        <div class="icon">{ICONS['shield']}</div>
-        <div><strong>Visa &amp; IELTS Guidance</strong><span>Step-by-step support, explained simply</span></div>
+        <div class="icon">{ICONS['cap']}</div>
+        <div><strong>Taught by UK Academics</strong><span>Genuine UK university expertise on our team</span></div>
       </div>
     </div>
   </div>
@@ -39,36 +40,10 @@ home_body = f"""
 <section class="stats-strip">
   <div class="container">
     <div class="grid grid-4">
-      <div><strong>2026</strong><span>Founded to serve Saudi students first</span></div>
-      <div><strong>100%</strong><span>Free student counselling</span></div>
-      <div><strong>1-on-1</strong><span>Dedicated application advisor</span></div>
-      <div><strong>24-48h</strong><span>Response time on WhatsApp</span></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="split">
-      <div>
-        <div class="eyebrow">Why Choose Us</div>
-        <h2>Honest guidance from people who know the UK system inside out.</h2>
-        <p style="margin:16px 0 30px;">We built UK Study Abroad because too many talented students give up on their UK dream over confusing paperwork and unclear advice. Here's how we do it differently.</p>
-
-        <div class="feature-row" data-reveal>
-          <div class="icon-wrap">{ICONS['target']}</div>
-          <div><h4>Course &amp; university matching</h4><p>We match your grades, budget and career goals to universities and courses where you'll genuinely thrive — not just wherever pays the highest commission.</p></div>
-        </div>
-        <div class="feature-row" data-reveal>
-          <div class="icon-wrap">{ICONS['shield']}</div>
-          <div><h4>Visa-first thinking</h4><p>Every recommendation we make considers your UK Student visa eligibility from day one, so there are no surprises later in the process.</p></div>
-        </div>
-        <div class="feature-row" data-reveal>
-          <div class="icon-wrap">{ICONS['headset']}</div>
-          <div><h4>Support in your time zone</h4><p>Message us on WhatsApp and get replies that respect Saudi Arabia working hours — no more waiting overnight for a UK office to open.</p></div>
-        </div>
-      </div>
-      <div data-reveal>{decorative_panel('cap', 'Study. Explore. Grow. Succeed.', 'The four pillars behind every recommendation we make.')}</div>
+      <div><strong>5 Services</strong><span>Covering every stage of your journey</span></div>
+      <div><strong>UK Faculty</strong><span>Real lecturers and professors on our team</span></div>
+      <div><strong>Recruitment to Degree</strong><span>Support from first enquiry to enrolment</span></div>
+      <div><strong>Saudi Arabia</strong><span>Our current focus market</span></div>
     </div>
   </div>
 </section>
@@ -76,96 +51,82 @@ home_body = f"""
 <section class="bg-alt">
   <div class="container">
     <div class="section-head center">
-      <div class="eyebrow">What We Do</div>
-      <h2>Complete support for every stage of your UK journey</h2>
-      <p>From your very first question to settling into UK student life, our services cover the full journey — not just the parts that are easy to sell.</p>
+      <div class="eyebrow">How We Help</div>
+      <h2>One partner for the whole journey to UK study.</h2>
+      <p>Studying abroad involves more than one decision. Students and families often need help with several things at once: preparing for an English exam, choosing the right course, applying to the right university, and finding meaningful academic experiences along the way. Most consultancies only cover part of that journey.</p>
+      <p>UK Study Abroad brings it together in one place, combining practical application support with genuine UK academic expertise, so students and schools do not have to juggle several different providers.</p>
+      <p style="font-weight:600;">One trusted partner. Every stage of the journey.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Our Services</div>
+      <h2>Everything you need to study and succeed in the UK</h2>
+      <p>Explore each service below, or message us on WhatsApp and we will help you find the right starting point.</p>
     </div>
     <div class="grid grid-3">
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['chat']}</div><h3>Free Counselling</h3><p>A no-obligation session to understand your goals, budget and academic background before we recommend anything.</p><a class="card-link" href="/services.html#counselling">Learn more {ICONS['arrow-right']}</a></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['doc-check']}</div><h3>University Applications</h3><p>We help you shortlist universities, prepare your personal statement, and submit accurate UCAS or direct applications.</p><a class="card-link" href="/services.html#applications">Learn more {ICONS['arrow-right']}</a></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['passport']}</div><h3>Student Visa Guidance</h3><p>Clear, step-by-step help with your CAS, financial evidence, IHS and Student Route visa application.</p><a class="card-link" href="/visa-ielts.html">Learn more {ICONS['arrow-right']}</a></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['book']}</div><h3>IELTS &amp; English Prep</h3><p>Guidance on which English test you need, realistic score targets, and preparation resources that work.</p><a class="card-link" href="/visa-ielts.html#ielts">Learn more {ICONS['arrow-right']}</a></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['award']}</div><h3>Scholarship Guidance</h3><p>We help you find and apply for university scholarships, bursaries and SACM-related funding options.</p><a class="card-link" href="/services.html#scholarships">Learn more {ICONS['arrow-right']}</a></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['home-key']}</div><h3>Accommodation &amp; Arrival</h3><p>Accommodation shortlists, pre-departure briefings, and a checklist for your first weeks in the UK.</p><a class="card-link" href="/services.html#arrival">Learn more {ICONS['arrow-right']}</a></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['book']}</div><h3>Short Courses</h3><p>Focused, practical courses that build specific academic skills and confidence.</p><a class="card-link" href="/services.html#short-courses">Learn More {ICONS['arrow-right']}</a></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['doc-check']}</div><h3>University Recruitment</h3><p>Clear, honest guidance choosing universities and preparing a strong application.</p><a class="card-link" href="/services.html#recruitment">Learn More {ICONS['arrow-right']}</a></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['cap']}</div><h3>Degree Placement</h3><p>Support finding and securing the right degree place at a UK institution.</p><a class="card-link" href="/services.html#degree-placement">Learn More {ICONS['arrow-right']}</a></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['target']}</div><h3>IELTS Preparation</h3><p>Structured preparation that builds the exam skills and confidence for a strong score.</p><a class="card-link" href="/services.html#ielts">Learn More {ICONS['arrow-right']}</a></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['globe']}</div><h3>Global Career Development Programme</h3><p>Our flagship live online academic module, with an optional UK experience.</p><a class="card-link" href="/services.html#global-career-programme">Learn More {ICONS['arrow-right']}</a></div>
     </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">Study Destinations</div>
-      <h2>Popular UK cities for international students</h2>
-      <p>Every city offers a different UK experience. We'll help you weigh cost of living, course options and community against what matters most to you.</p>
-    </div>
-    <div class="dest-list">
-      {city_tile('London', 'Global finance, culture &amp; Russell Group universities', 0, 'Capital City')}
-      {city_tile('Manchester', 'Vibrant, affordable, major research universities', 1, 'Best Value')}
-      {city_tile('Birmingham', 'Central location, strong business schools', 2, 'Central Hub')}
-      {city_tile('Edinburgh', 'Historic city, world-ranked institutions', 3, 'Historic Charm')}
-      {city_tile('Coventry', 'Modern campuses, welcoming international community', 4, 'Community Focus')}
-      {city_tile('Glasgow', 'Affordable living, strong engineering &amp; medicine', 5, 'Affordable Living')}
-    </div>
-    <div style="text-align:center;margin-top:40px;">
-      <a class="btn btn-outline" href="/destinations.html">Explore All Destinations {ICONS['arrow-right']}</a>
+    <div style="text-align:center;margin-top:36px;">
+      <a class="btn btn-primary" href="/services.html">See All Our Services {ICONS['arrow-right']}</a>
     </div>
   </div>
 </section>
 
 <section class="bg-alt">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Why Families Choose Us</div>
+      <h2>A single, trusted partner for the whole journey</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="card" data-reveal>
+        <div class="icon-wrap">{ICONS['cap']}</div>
+        <h3>Genuine UK academic access</h3>
+        <p>Our team includes real UK university lecturers and professors, so families get more than paperwork help. They get direct academic expertise.</p>
+      </div>
+      <div class="card" data-reveal>
+        <div class="icon-wrap">{ICONS['doc-check']}</div>
+        <h3>Complete application support</h3>
+        <p>From choosing courses to submitting a strong application, we guide students through university recruitment and degree placement from start to finish.</p>
+      </div>
+      <div class="card" data-reveal>
+        <div class="icon-wrap">{ICONS['book']}</div>
+        <h3>Exam and language preparation</h3>
+        <p>Structured IELTS preparation and short courses build the practical skills and confidence students need before they apply.</p>
+      </div>
+      <div class="card" data-reveal>
+        <div class="icon-wrap">{ICONS['users']}</div>
+        <h3>Trusted school partnerships</h3>
+        <p>We work directly with school principals and colleges across Saudi Arabia, giving their students real benefits through our partnership.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
   <div class="container">
     <div class="split reverse">
-      <div class="split-media" data-reveal>{decorative_panel('passport', 'UK Student Route Visa', 'CAS · Finances · IHS · Biometrics · Decision', 'gold')}</div>
+      <div class="split-media" data-reveal>{decorative_panel('users', 'For Schools & Colleges', 'Real benefits for your students&rsquo; future', 'gold')}</div>
       <div>
-        <div class="eyebrow">Visa &amp; IELTS Guidance</div>
-        <h2>We demystify the UK Student visa process, step by step</h2>
-        <p style="margin:16px 0 26px;">The Student Route visa can feel overwhelming — financial evidence rules, CAS letters, biometric appointments. We break it into a clear checklist so you always know what's next.</p>
+        <div class="eyebrow">For Schools &amp; Colleges</div>
+        <h2>A partnership built around your students&rsquo; global future</h2>
+        <p style="margin:16px 0 26px;">We work directly with school principals and colleges across Saudi Arabia, combining short courses, university recruitment, degree placement, IELTS preparation and our Global Career Development Programme into a partnership built around what benefits your students most as they plan their study abroad future in the UK.</p>
         <div style="margin-bottom:28px;">
         {check_list([
-            'Understand CAS, financial requirements &amp; the Immigration Health Surcharge',
-            'Know exactly which IELTS/UKVI score your course requires',
-            'Prepare documents correctly the first time — fewer delays, fewer refusals',
+            'Practical support that helps your students move confidently toward university and their careers',
+            'Direct access to genuine UK academic expertise through our own team of lecturers and professors',
+            'A collaborative partnership shaped around your school and your students, not a one size fits all package',
         ])}
         </div>
-        <a class="btn btn-primary" href="/visa-ielts.html">See the Full Visa Guide {ICONS['arrow-right']}</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">Why Students Choose Us</div>
-      <h2>What you can expect from working with us</h2>
-    </div>
-    <div class="grid grid-4">
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['chat']}</div><h3>Free, No-Pressure Advice</h3><p>An honest first conversation with no obligation to sign up for anything.</p></div>
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['headset']}</div><h3>Fast WhatsApp Replies</h3><p>Real answers within 24-48 hours, in Saudi Arabia-friendly hours.</p></div>
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['shield']}</div><h3>Visa-Aware Guidance</h3><p>Every recommendation accounts for your Student visa eligibility from day one.</p></div>
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['target']}</div><h3>Matched, Not Mass-Marketed</h3><p>Course and university suggestions based on your grades and goals — not a fixed list.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-alt">
-  <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">From the Blog</div>
-      <h2>Guides &amp; insights for your UK application</h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="post-card" data-reveal>
-        <div class="post-media">{decorative_panel('passport', 'Visa Guide')}</div>
-        <div class="post-body"><div class="post-meta"><span>Visas</span><span>2026</span></div><h3>UK Student Visa Guide for Saudi Students</h3><p>Everything you need to know about the Student Route visa — CAS, finances, IHS and timelines.</p><a class="card-link" href="/blog-visa-guide.html">Read Article {ICONS['arrow-right']}</a></div>
-      </div>
-      <div class="post-card" data-reveal>
-        <div class="post-media">{decorative_panel('book', 'IELTS Guide')}</div>
-        <div class="post-body"><div class="post-meta"><span>English Tests</span><span>2026</span></div><h3>IELTS Requirements for UK Universities</h3><p>What score you actually need, which test to book, and how it affects your visa application.</p><a class="card-link" href="/blog-ielts-guide.html">Read Article {ICONS['arrow-right']}</a></div>
-      </div>
-      <div class="post-card" data-reveal>
-        <div class="post-media">{decorative_panel('compass', 'City Guide')}</div>
-        <div class="post-body"><div class="post-meta"><span>Student Life</span><span>2026</span></div><h3>Top UK Cities for International Students</h3><p>A practical comparison of cost of living, community and university options across the UK.</p><a class="card-link" href="/blog-top-cities.html">Read Article {ICONS['arrow-right']}</a></div>
+        <a class="btn btn-primary" href="/schools.html">Partner With Us {ICONS['arrow-right']}</a>
       </div>
     </div>
   </div>
@@ -176,8 +137,8 @@ home_body = f"""
     <div class="cta-banner" data-reveal>
       <div class="container-inner">
         <div>
-          <h2>Ready to start your UK application?</h2>
-          <p>Book a free, no-obligation consultation and get a clear plan for your course, visa and timeline.</p>
+          <h2>Ready to plan your next step?</h2>
+          <p>Message us to learn more about our services, for your family or your school.</p>
         </div>
         <div class="cta-actions">
           <a class="btn btn-whatsapp" href="{whatsapp_link()}" target="_blank" rel="noopener">{ICONS['whatsapp']} WhatsApp Us Now</a>
@@ -192,8 +153,8 @@ home_body = f"""
 
 build_page(
     "index.html",
-    "UK Study Abroad | UK University Admissions &amp; Visa Consultants for Saudi Students",
-    "UK Study Abroad helps students in Saudi Arabia apply to UK universities, prepare for the Student Route visa, and plan their move to the UK. Free consultation via WhatsApp.",
+    "UK Study Abroad | Study Abroad Consultancy for Saudi Arabia",
+    "UK Study Abroad is a study abroad consultancy offering short courses, university recruitment, degree placement, IELTS preparation and the Global Career Development Programme, a live online academic module with an optional UK experience, for students and schools in Saudi Arabia.",
     "index.html",
     home_body,
 )
@@ -214,7 +175,7 @@ def page_hero(eyebrow, title, desc, current_label):
 
 about_body = f"""
 <main id="main">
-{page_hero('About Us', 'Built to make the UK feel within reach.', "UK Study Abroad is an independent education consultancy helping students plan, apply and prepare for university life in the United Kingdom — with Saudi Arabia as our founding market.", 'About Us')}
+{page_hero('About Us', 'A complete study abroad consultancy, built around real UK academic expertise.', "UK Study Abroad supports students and schools across Saudi Arabia with short courses, university recruitment, degree placement, IELTS preparation and our own live online to UK academic programme.", 'About Us')}
 
 <section>
   <div class="container">
@@ -222,11 +183,11 @@ about_body = f"""
       <div>
         <div class="eyebrow">Our Story</div>
         <h2>Why we started UK Study Abroad</h2>
-        <p style="margin-top:16px;">Every year, thousands of talented students across Saudi Arabia consider studying in the United Kingdom — and every year, many give up before they even apply, overwhelmed by conflicting advice, confusing visa paperwork, and agents who push whichever university pays the best commission.</p>
-        <p>UK Study Abroad exists to fix that. We built a consultancy around one simple idea: give students honest, visa-aware guidance from the very first conversation, in the same time zone they live in, without the pressure and confusion that usually comes with this journey.</p>
-        <p>We're starting with a focused mission — supporting students in Saudi Arabia — because we believe doing one thing properly beats doing everything half-heartedly. As we grow, we plan to extend the same standard of support to students across the wider region.</p>
+        <p style="margin-top:16px;">Every year, thousands of talented students across Saudi Arabia are capable of far more than a single pathway can offer. What many of them are missing is not ambition. It is one trusted partner who can help with the practical steps of studying abroad and provide genuine UK academic expertise along the way.</p>
+        <p>UK Study Abroad was founded to bring these pieces together. We support students and schools with short courses, university recruitment and application guidance, degree placement and IELTS preparation, alongside our own Global Career Development Programme, a live online academic module taught directly by UK university lecturers and professors, with the option to continue that learning in person in the UK.</p>
+        <p>We are starting with a focused mission, supporting students and schools in Saudi Arabia, because we believe doing this properly beats doing it half heartedly. As we grow, we plan to extend the same standard of support to students across the wider region.</p>
       </div>
-      <div data-reveal>{decorative_panel('compass', 'Study. Explore. Grow. Succeed.', 'The four pillars behind everything we do — taken directly from our founding promise to students.')}</div>
+      <div data-reveal>{decorative_panel('cap', 'Academic. International. Real.', 'The principles behind everything we deliver.')}</div>
     </div>
   </div>
 </section>
@@ -235,13 +196,13 @@ about_body = f"""
   <div class="container">
     <div class="section-head center">
       <div class="eyebrow">Our Values</div>
-      <h2>What guides every recommendation we make</h2>
+      <h2>What guides every service we deliver</h2>
     </div>
     <div class="grid grid-4">
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['heart']}</div><h3>Honesty First</h3><p>We only recommend universities and courses that genuinely fit your grades, budget and goals.</p></div>
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['shield']}</div><h3>Visa-Aware Advice</h3><p>Every suggestion accounts for your Student visa eligibility from the very first conversation.</p></div>
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['headset']}</div><h3>Always Reachable</h3><p>WhatsApp-first support that respects Saudi Arabia working hours and replies quickly.</p></div>
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['target']}</div><h3>Outcome-Focused</h3><p>We measure success by successful visas and happy students, not the number of applications filed.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['cap']}</div><h3>Academic Integrity</h3><p>Our Global Career Development Programme is designed and delivered by people with genuine UK university academic experience, never outsourced to generic instructors.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['users']}</div><h3>Genuinely International</h3><p>Students learn alongside peers from other countries, building the cross cultural confidence that global study and careers require.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['heart']}</div><h3>Honesty First</h3><p>We give clear, honest advice about which courses and universities genuinely fit each student, never just the easiest option to recommend.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['target']}</div><h3>Outcome Focused</h3><p>We measure success by the outcomes our students achieve, from exam scores to university offers to completed programmes.</p></div>
     </div>
   </div>
 </section>
@@ -251,15 +212,15 @@ about_body = f"""
     <div class="section-head center">
       <div class="eyebrow">Our Team</div>
       <h2>People behind UK Study Abroad</h2>
-      <p>A small, focused team covering counselling, admissions and visa guidance — with more specialists joining as we grow.</p>
+      <p>A small, academically led team, with more UK university lecturers and professors joining our faculty as we grow.</p>
     </div>
     <div class="grid grid-4">
-      <div class="team-card" data-reveal><div class="team-avatar">F</div><h4>Founder &amp; Lead Consultant</h4><span class="role">Strategy &amp; Partnerships</span><p>Sets the direction for UK Study Abroad and oversees every student's journey end to end.</p></div>
-      <div class="team-card" data-reveal><div class="team-avatar">A</div><h4>Admissions Specialist</h4><span class="role">University Applications</span><p>Matches students to courses and manages the university application process.</p></div>
-      <div class="team-card" data-reveal><div class="team-avatar">V</div><h4>Visa &amp; Immigration Advisor</h4><span class="role">Student Route Guidance</span><p>Guides students through CAS, financial evidence and the visa application itself.</p></div>
-      <div class="team-card" data-reveal><div class="team-avatar">S</div><h4>Student Support Officer</h4><span class="role">WhatsApp &amp; Pre-Departure</span><p>The first friendly reply you'll get on WhatsApp, and your contact for pre-departure prep.</p></div>
+      <div class="team-card" data-reveal><div class="team-avatar">F</div><h4>Founder &amp; Director</h4><span class="role">Strategy &amp; Partnerships</span><p>Sets the direction for UK Study Abroad and oversees every student's journey, from first enquiry to enrolment and beyond.</p></div>
+      <div class="team-card" data-reveal><div class="team-avatar">A</div><h4>Academic Lead</h4><span class="role">UK University Lecturer</span><p>Designs and teaches the live online academic module, drawing directly on UK university teaching experience.</p></div>
+      <div class="team-card" data-reveal><div class="team-avatar">P</div><h4>Partnerships Lead</h4><span class="role">Schools &amp; Colleges</span><p>Works directly with school principals and colleges to bring our services to their students.</p></div>
+      <div class="team-card" data-reveal><div class="team-avatar">S</div><h4>Student Experience Coordinator</h4><span class="role">WhatsApp &amp; Enquiries</span><p>The first friendly reply you will get on WhatsApp, and your contact throughout your application or programme.</p></div>
     </div>
-    <p class="table-note" style="text-align:center;margin-top:24px;">Team structure shown reflects our current operating model — update with real staff names, titles and photos as your team grows.</p>
+    <p class="table-note" style="text-align:center;margin-top:24px;">Team structure shown reflects our current operating model. Update with real staff names, titles, academic credentials and photos as your faculty grows.</p>
   </div>
 </section>
 
@@ -268,8 +229,8 @@ about_body = f"""
     <div class="cta-banner" data-reveal>
       <div class="container-inner">
         <div>
-          <h2>Let's talk about your UK plans</h2>
-          <p>Tell us your grades, budget and course interests — we'll tell you honestly what's realistic and what to do next.</p>
+          <h2>Let's talk about your student's global future</h2>
+          <p>Tell us a little about your child or your school, and we will explain honestly which of our services is the right fit.</p>
         </div>
         <div class="cta-actions">
           <a class="btn btn-whatsapp" href="{whatsapp_link()}" target="_blank" rel="noopener">{ICONS['whatsapp']} WhatsApp Us Now</a>
@@ -308,311 +269,164 @@ def faq_section(faqs, eyebrow="FAQs", title="Frequently asked questions"):
 # ==========================================================================
 services_body = f"""
 <main id="main">
-{page_hero('Our Services', 'End-to-end support for your UK application', 'From your first question to your first week on campus — here is exactly how UK Study Abroad supports you at every stage.', 'Services')}
-
-<section>
-  <div class="container">
-    <div class="grid grid-2">
-
-      <div class="card" id="counselling" data-reveal>
-        <div class="icon-wrap">{ICONS['chat']}</div>
-        <h3>Free Counselling &amp; Course Selection</h3>
-        <p style="margin-bottom:18px;">A relaxed, no-obligation conversation to understand your grades, budget, career goals and preferred UK cities before we suggest anything.</p>
-        {check_list(['30-45 minute consultation via WhatsApp call or video', 'Honest shortlist of 3-5 realistic universities', 'Clear next-step plan with no pressure to commit'])}
-      </div>
-
-      <div class="card" id="applications" data-reveal>
-        <div class="icon-wrap">{ICONS['doc-check']}</div>
-        <h3>University Application Support</h3>
-        <p style="margin-bottom:18px;">We help you build a strong application — not just a submitted one — so you present your best self to admissions teams.</p>
-        {check_list(['UCAS or direct university application guidance', 'Personal statement review and feedback', 'Document checklist: transcripts, certificates, references'])}
-      </div>
-
-      <div class="card" data-reveal>
-        <div class="icon-wrap">{ICONS['passport']}</div>
-        <h3>Student Visa (Student Route) Guidance</h3>
-        <p style="margin-bottom:18px;">Once your CAS is issued, we walk you through the Student Route visa application so nothing is left to guesswork.</p>
-        {check_list(['CAS review and financial requirement explanation', 'Immigration Health Surcharge (IHS) and fee breakdown', 'Biometric appointment and document checklist'])}
-        <a class="card-link" href="/visa-ielts.html">See the full visa guide {ICONS['arrow-right']}</a>
-      </div>
-
-      <div class="card" id="ielts" data-reveal>
-        <div class="icon-wrap">{ICONS['book']}</div>
-        <h3>IELTS &amp; English Test Guidance</h3>
-        <p style="margin-bottom:18px;">We help you understand exactly which English test and score your course and visa require — and how to prepare realistically.</p>
-        {check_list(['UKVI IELTS vs Academic IELTS explained', 'CEFR B1/B2 requirements by course level', 'Recommended preparation resources and timelines'])}
-        <a class="card-link" href="/visa-ielts.html#ielts">See IELTS details {ICONS['arrow-right']}</a>
-      </div>
-
-      <div class="card" id="scholarships" data-reveal>
-        <div class="icon-wrap">{ICONS['award']}</div>
-        <h3>Scholarship &amp; Funding Guidance</h3>
-        <p style="margin-bottom:18px;">We help you identify and apply for university scholarships, merit bursaries and relevant funding routes.</p>
-        {check_list(['University-specific scholarship shortlists', 'Guidance on SACM-related funding questions', 'Application timeline planning around funding deadlines'])}
-      </div>
-
-      <div class="card" id="arrival" data-reveal>
-        <div class="icon-wrap">{ICONS['home-key']}</div>
-        <h3>Accommodation &amp; Pre-Departure Support</h3>
-        <p style="margin-bottom:18px;">Once your visa is approved, we help you prepare for departure and your first weeks on campus.</p>
-        {check_list(['Accommodation shortlist near your university', 'Pre-departure checklist: banking, SIM, essentials', 'Airport arrival and first-week orientation tips'])}
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="bg-alt">
-  <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">How It Works</div>
-      <h2>Your journey with us, in four steps</h2>
-    </div>
-    <div class="steps">
-      <div class="step" data-reveal><h4>Free Consultation</h4><p>Share your grades, budget and goals. We tell you honestly what's realistic.</p></div>
-      <div class="step" data-reveal><h4>Course &amp; University Match</h4><p>We shortlist universities and help you submit strong applications.</p></div>
-      <div class="step" data-reveal><h4>Visa &amp; IELTS Support</h4><p>Once accepted, we guide your English test and Student Route visa application.</p></div>
-      <div class="step" data-reveal><h4>Pre-Departure &amp; Arrival</h4><p>Accommodation, checklists, and support for your first weeks in the UK.</p></div>
-    </div>
-  </div>
-</section>
-
-{faq_section([
-    ("Is the initial consultation really free?", "Yes. Your first consultation is completely free and comes with no obligation to use our other services."),
-    ("Do you guarantee university admission or a visa?", "No consultancy can honestly guarantee admission or a visa decision — those are made by universities and UK Visas &amp; Immigration. What we guarantee is honest guidance and thorough preparation to give you the strongest possible application."),
-    ("Do you charge a fee for your services?", "Our fee structure depends on the level of support you need. We'll always explain any costs clearly and in advance — ask us on WhatsApp for current pricing."),
-    ("Can you help even if I haven't chosen a course yet?", "Absolutely — that's exactly what the free consultation is for. Many students start with us before they've decided on a course or university."),
-])}
-
-<section>
-  <div class="container">
-    <div class="cta-banner" data-reveal>
-      <div class="container-inner">
-        <div><h2>Not sure where to start?</h2><p>Message us on WhatsApp and we'll point you in the right direction — no forms, no pressure.</p></div>
-        <div class="cta-actions">
-          <a class="btn btn-whatsapp" href="{whatsapp_link()}" target="_blank" rel="noopener">{ICONS['whatsapp']} Chat on WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-"""
-
-# ==========================================================================
-# DESTINATIONS
-# ==========================================================================
-destinations_body = f"""
-<main id="main">
-{page_hero('Study Destinations', 'Why the UK — and where to study', 'Explore what makes the United Kingdom one of the world&rsquo;s top study destinations, and compare the cities and universities that could become your new home.', 'Study Destinations')}
+{page_hero('Our Services', 'Everything you need to study and succeed in the UK.', 'From short courses and IELTS preparation to university recruitment, degree placement and our own live academic programme, we support students at every stage of their UK study journey.', 'Services')}
 
 <section>
   <div class="container">
     <div class="section-head center">
-      <div class="eyebrow">Why Study in the UK</div>
-      <h2>What makes a UK degree worth it</h2>
+      <div class="eyebrow">Who We Help</div>
+      <h2>Built for ambitious, globally minded students</h2>
+      <p>Our services are designed for international students who want more than a single pathway, currently welcoming students from schools and colleges across Saudi Arabia.</p>
     </div>
     <div class="grid grid-4">
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['award']}</div><h3>Globally Recognised</h3><p>UK degrees are respected by employers and universities worldwide, backed by centuries of academic tradition.</p></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['calendar']}</div><h3>Shorter Courses</h3><p>Bachelor's degrees typically take 3 years and Master's just 1 year — saving time and tuition cost versus many other countries.</p></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['briefcase']}</div><h3>Graduate Work Route</h3><p>Eligible graduates can apply for the Graduate visa to work in the UK after finishing their studies, subject to current immigration rules.</p></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['globe']}</div><h3>Multicultural Cities</h3><p>Study alongside students from around the world in cities with established Arabic-speaking and Saudi student communities.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['cap']}</div><h3>Academically Ambitious</h3><p>Students who want a genuine taste of UK university level thinking, not just extra homework.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['globe']}</div><h3>Globally Minded</h3><p>Students who want to build the international outlook that universities and employers increasingly expect.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['users']}</div><h3>Ready to Collaborate</h3><p>Students who are comfortable working alongside peers from other countries on shared academic tasks.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['target']}</div><h3>Planning Ahead</h3><p>Students starting to think seriously about their next step toward university and their career.</p></div>
     </div>
   </div>
 </section>
 
-<section class="bg-alt">
+<section class="bg-alt" id="short-courses">
   <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">Popular Cities</div>
-      <h2>Where students choose to study</h2>
-      <p>Every city offers a different balance of cost, culture and course options. We'll help you weigh them against your own priorities.</p>
-    </div>
-    <div class="dest-list">
-      {city_tile('London', 'Global finance &amp; Russell Group universities', 0, 'Capital City')}
-      {city_tile('Manchester', 'Vibrant, affordable, major research universities', 1, 'Best Value')}
-      {city_tile('Birmingham', 'Central location, strong business schools', 2, 'Central Hub')}
-      {city_tile('Edinburgh', 'Historic city, world-ranked institutions', 3, 'Historic Charm')}
-      {city_tile('Coventry', 'Modern campuses, welcoming international community', 4, 'Community Focus')}
-      {city_tile('Glasgow', 'Affordable living, strong engineering &amp; medicine', 5, 'Affordable Living')}
-      {city_tile('Leeds', 'Large student population, strong law &amp; business', 6, 'Student Hub')}
-      {city_tile('Sheffield', 'Friendly city, respected engineering faculties', 7, 'Engineering Hub')}
-      {city_tile('Cardiff', "Compact capital, growing international intake", 8, 'Compact Capital')}
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">Popular Courses</div>
-      <h2>What Saudi students commonly study in the UK</h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['briefcase']}</div><h3>Business &amp; MBA</h3><p>Management, finance, marketing and MBA programmes at universities with strong industry links.</p></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['heart']}</div><h3>Medicine &amp; Health Sciences</h3><p>Medicine, dentistry, pharmacy and allied health courses — note that medicine places are highly competitive and entry requirements are strict.</p></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['target']}</div><h3>Engineering</h3><p>Mechanical, civil, electrical and petroleum engineering at universities with accredited programmes.</p></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['globe']}</div><h3>Computer Science &amp; AI</h3><p>Computer science, data science and artificial intelligence courses at universities investing heavily in tech faculties.</p></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['doc-check']}</div><h3>Law</h3><p>LLB and LLM programmes, including routes for students planning to convert qualifications back home.</p></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['compass']}</div><h3>Architecture &amp; Design</h3><p>Architecture, interior design and urban planning courses with strong studio-based teaching.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-alt">
-  <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">University Options</div>
-      <h2>A general guide to UK university types</h2>
-      <p>This is general information to help you understand your options — not an exclusive partner list. We'll recommend specific universities once we know your grades and goals.</p>
-    </div>
     <div class="split">
       <div>
-        <h3 style="margin-bottom:14px;">Russell Group Universities</h3>
-        <p style="margin-bottom:18px;">A group of 24 research-intensive, highly ranked UK universities — often more competitive to enter, with strong global recognition.</p>
-        <div class="uni-pill-list">
-          <span class="uni-pill">University of Manchester</span>
-          <span class="uni-pill">University of Birmingham</span>
-          <span class="uni-pill">University of Glasgow</span>
-          <span class="uni-pill">University of Leeds</span>
-          <span class="uni-pill">University of Sheffield</span>
-          <span class="uni-pill">Queen Mary University of London</span>
-        </div>
+        <div class="eyebrow">Short Courses</div>
+        <h2>Build practical skills with a focused short course</h2>
+        <p style="margin:16px 0 22px;">Our short courses are designed to build specific academic or practical skills over a condensed timeframe, ideal for students who want a meaningful head start without a long term commitment.</p>
+        {check_list([
+            'Flexible, focused courses on specific academic and practical skills',
+            'Delivered online for easy access from anywhere',
+            'A practical first step before a bigger academic commitment',
+        ])}
       </div>
+      <div data-reveal>{decorative_panel('book', 'Short Courses', 'A focused, practical head start')}</div>
+    </div>
+  </div>
+</section>
+
+<section id="recruitment">
+  <div class="container">
+    <div class="split reverse">
+      <div class="split-media" data-reveal>{decorative_panel('doc-check', 'University Recruitment', 'Guidance through every step of the application')}</div>
       <div>
-        <h3 style="margin-bottom:14px;">Modern &amp; Teaching-Focused Universities</h3>
-        <p style="margin-bottom:18px;">Often more accessible entry requirements, strong career support, and a genuine focus on international student experience.</p>
-        <div class="uni-pill-list">
-          <span class="uni-pill">Coventry University</span>
-          <span class="uni-pill">University of Hertfordshire</span>
-          <span class="uni-pill">Northumbria University</span>
-          <span class="uni-pill">University of Sunderland</span>
-          <span class="uni-pill">University of East London</span>
-          <span class="uni-pill">Teesside University</span>
-        </div>
-      </div>
-    </div>
-    <p class="table-note" style="margin-top:26px;">University names above are shown as general examples of well-known UK institutions and do not imply an existing partnership. Update this list with your confirmed partner universities.</p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="cta-banner" data-reveal>
-      <div class="container-inner">
-        <div><h2>Not sure which city or course fits you?</h2><p>Book a free consultation and we'll help you narrow it down based on your grades, budget and goals.</p></div>
-        <div class="cta-actions">
-          <a class="btn btn-whatsapp" href="{whatsapp_link()}" target="_blank" rel="noopener">{ICONS['whatsapp']} WhatsApp Us</a>
-          <a class="btn btn-outline-light" href="/contact.html">Book Consultation</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-"""
-
-# ==========================================================================
-# VISA & IELTS
-# ==========================================================================
-visa_body = f"""
-<main id="main">
-{page_hero('Visa &amp; IELTS Guidance', 'The UK Student visa, explained simply', 'A clear, step-by-step look at the Student Route visa process and English language requirements &mdash; based on official UK government guidance.', 'Visa &amp; IELTS')}
-
-<section>
-  <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">The Process</div>
-      <h2>Five stages of a UK Student visa application</h2>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item" data-reveal>
-        <span class="tag">Stage 1</span>
-        <h4>Get your university offer &amp; CAS</h4>
-        <p>Once you accept an unconditional offer and meet the university's conditions, your UK sponsor institution issues a Confirmation of Acceptance for Studies (CAS) — a unique reference number required for your visa application.</p>
-      </div>
-      <div class="timeline-item" data-reveal>
-        <span class="tag">Stage 2</span>
-        <h4>Prove your English language ability</h4>
-        <p>Most applicants must prove English proficiency to at least CEFR level B2 for degree-level courses (B1 for below-degree courses), usually via a Secure English Language Test (SELT) such as UKVI IELTS, unless exempt.</p>
-      </div>
-      <div class="timeline-item" data-reveal>
-        <span class="tag">Stage 3</span>
-        <h4>Show your financial evidence</h4>
-        <p>You'll need to show you can cover your course fees and living costs, with the required funds held in your account for a consecutive 28-day period ending within 31 days of your application date.</p>
-      </div>
-      <div class="timeline-item" data-reveal>
-        <span class="tag">Stage 4</span>
-        <h4>Submit your application &amp; biometrics</h4>
-        <p>Apply online up to 6 months before your course start date (if applying from outside the UK), pay the visa fee and Immigration Health Surcharge, then attend a biometric appointment at a visa application centre.</p>
-      </div>
-      <div class="timeline-item" data-reveal>
-        <span class="tag">Stage 5</span>
-        <h4>Receive your decision &amp; prepare to travel</h4>
-        <p>Applications from outside the UK are usually decided within around 3 weeks. Once approved, we'll help you with a pre-departure checklist covering accommodation, banking, and your first days on campus.</p>
+        <div class="eyebrow">University Recruitment</div>
+        <h2>Clear, honest guidance through university applications</h2>
+        <p style="margin:16px 0 22px;">Choosing the right course and university, and putting together a strong application, can be overwhelming without the right support. We guide students through the process step by step, from shortlisting universities to submitting a complete, well prepared application.</p>
+        {check_list([
+            'Help shortlisting universities and courses that genuinely fit each student',
+            'Guidance on personal statements, references and application requirements',
+            'Clear, honest advice with no pressure toward any particular institution',
+        ])}
       </div>
     </div>
   </div>
 </section>
 
-<section class="bg-alt">
+<section class="bg-alt" id="degree-placement">
   <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">Costs &amp; Requirements</div>
-      <h2>What a Student visa costs (at a glance)</h2>
+    <div class="split">
+      <div>
+        <div class="eyebrow">Degree Placement</div>
+        <h2>Support finding the right degree place</h2>
+        <p style="margin:16px 0 22px;">We help students identify and secure a place on the right undergraduate or postgraduate degree course at a UK institution, matching each student's goals, grades and interests to the right option.</p>
+        {check_list([
+            'Matching students to degree courses that fit their goals and grades',
+            'Support through offers, conditions and enrolment',
+            'Ongoing guidance right up to the start of the degree',
+        ])}
+      </div>
+      <div data-reveal>{decorative_panel('cap', 'Degree Placement', 'The right course, at the right university')}</div>
     </div>
-    <div class="table-scroll">
-      <table class="info-table">
-        <thead><tr><th>Item</th><th>Typical Cost / Requirement</th></tr></thead>
-        <tbody>
-          <tr><td>Student visa application fee (from outside the UK)</td><td>£558</td></tr>
-          <tr><td>Immigration Health Surcharge (IHS)</td><td>£776 per year of your visa</td></tr>
-          <tr><td>Living cost financial evidence &mdash; London courses</td><td>£1,529 per month (up to 9 months)</td></tr>
-          <tr><td>Living cost financial evidence &mdash; outside London</td><td>£1,171 per month (up to 9 months)</td></tr>
-          <tr><td>Course fees requirement</td><td>Full amount shown on your CAS (or first year's fees if paying in instalments)</td></tr>
-          <tr><td>Application window (from outside the UK)</td><td>Up to 6 months before your course starts</td></tr>
-          <tr><td>Typical processing time (from outside the UK)</td><td>Around 3 weeks</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="table-note">Figures shown reflect official UK government guidance at the time this page was published. Visa fees, financial thresholds and rules change periodically — we always confirm the latest requirements with you directly, and you can verify current figures on gov.uk at any time.</p>
   </div>
 </section>
 
 <section id="ielts">
   <div class="container">
-    <div class="split">
+    <div class="split reverse">
+      <div class="split-media" data-reveal>{decorative_panel('target', 'IELTS Preparation', 'Practical preparation toward a real target score')}</div>
       <div>
-        <div class="eyebrow">English Language Requirement</div>
-        <h2>Which IELTS score do you actually need?</h2>
-        <p style="margin:16px 0 22px;">Your required English level depends on your course level, not a single fixed number. Here's how it generally breaks down:</p>
+        <div class="eyebrow">IELTS Preparation</div>
+        <h2>Structured preparation for the IELTS exam</h2>
+        <p style="margin:16px 0 22px;">Meeting the English language requirement is often the first practical step toward studying in the UK. Our IELTS preparation builds the exam skills, confidence and practice students need to reach their target score.</p>
         {check_list([
-            'Degree-level courses (Bachelor&rsquo;s, Master&rsquo;s): equivalent to CEFR level B2',
-            'Below degree-level (foundation, pathway courses): equivalent to CEFR level B1',
-            'You may be exempt if you hold a UK degree, or a degree taught in English assessed by Ecctis',
-            'Most applicants take an approved Secure English Language Test (SELT), such as UKVI IELTS',
+            'Structured preparation across reading, writing, listening and speaking',
+            'Practice with realistic exam style tasks and feedback',
+            'A clear, practical plan toward each student&rsquo;s target score',
         ])}
-        <p>Your university may also accept its own English assessment for degree-level entry, provided it meets the B2 standard. We'll confirm exactly which test and score your chosen course requires before you book anything.</p>
       </div>
-      <div data-reveal>{decorative_panel('book', 'IELTS UKVI', 'CEFR B1 &mdash; B2, depending on course level')}</div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-alt" id="global-career-programme">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Our Flagship Programme</div>
+      <h2>Global Career Development Programme</h2>
+      <p>Learn Online. Think Globally. Experience the UK. A live online academic module taught directly by UK university lecturers and professors, with the option to continue the experience in person in the UK.</p>
+    </div>
+    <div class="split" style="margin-top:10px;">
+      <div>
+        <div class="eyebrow">Stage One</div>
+        <h3 style="margin:10px 0 14px;">The online academic module</h3>
+        <p style="margin:0 0 22px;">The programme opens with a short, live online academic module delivered directly by UK university lecturers and professors. Students are not watching pre-recorded videos. They are taught in real time by academics with genuine UK university teaching experience.</p>
+        {check_list([
+            'Live sessions taught directly by UK university lecturers and professors',
+            'Small, international cohorts so every student can take part in discussion',
+            'Academic and professional skills built through real coursework, not worksheets',
+        ])}
+      </div>
+      <div data-reveal>{decorative_panel('cap', 'Live Online Teaching', 'Delivered directly by UK university lecturers')}</div>
+    </div>
+    <div class="split reverse" style="margin-top:56px;">
+      <div class="split-media" data-reveal>{decorative_panel('globe', 'Two Weeks in the UK', 'An optional continuation of the module, not a summer camp')}</div>
+      <div>
+        <div class="eyebrow">Stage Two, Optional</div>
+        <h3 style="margin:10px 0 14px;">The UK experience</h3>
+        <p style="margin:0 0 22px;">Students who complete the online module have the option to travel to the UK for a two week in person experience over the summer, continuing their learning on the ground rather than starting something new. This is not a sightseeing trip built around a summer camp format. It is a continuation of the same academic programme, in the country it is designed around.</p>
+        {check_list([
+            'Two weeks in the UK, continuing the academic module in person',
+            'Delivered by the same academic team, not a separate holiday provider',
+            'Optional: students can complete the full programme online only if preferred',
+        ])}
+      </div>
+    </div>
+    <div style="margin-top:56px;">
+      <div class="section-head center">
+        <div class="eyebrow">Stage Three</div>
+        <h3>Final project and certificate</h3>
+        <p>Every student completes a final project that brings their learning together, and graduates with a certificate recognising their academic and professional development.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-reveal><h4>1. Online Academic Module</h4><p>Live teaching from UK university lecturers and professors.</p></div>
+        <div class="step" data-reveal><h4>2. International Collaboration</h4><p>Shared academic work with students from other countries.</p></div>
+        <div class="step" data-reveal><h4>3. Skills Development</h4><p>Academic, professional and interpersonal skills, built throughout.</p></div>
+        <div class="step" data-reveal><h4>4. UK Experience</h4><p>An optional two week continuation of the module, in the UK.</p></div>
+        <div class="step" data-reveal><h4>5. Final Project</h4><p>One piece of work that brings the whole module together.</p></div>
+        <div class="step" data-reveal><h4>6. Certificate</h4><p>Recognition of genuine academic and professional development.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 {faq_section([
-    ("Do I need a UK visa consultant, or can I apply myself?", "You can apply for a Student visa yourself &mdash; the process doesn't legally require an agent. Many students choose support because the financial evidence rules and documentation are easy to get wrong, and a small mistake can cause delays or refusal."),
-    ("What happens if my financial evidence doesn't meet the 28-day rule?", "Your application can be refused if the required funds haven't been held for a full, continuous 28-day period ending within 31 days of your application. We help you plan this timeline carefully in advance."),
-    ("Can my family accompany me on a Student visa?", "Dependants are only permitted in specific circumstances under current UK immigration rules, mainly for postgraduate research students or government-sponsored students. We'll explain whether this applies to your situation."),
-    ("Is the Graduate visa still available after I finish my degree?", "Yes, eligible graduates can currently apply for the Graduate visa to work in the UK after their studies. Note that the standard duration is due to change from 2 years to 18 months for new applicants (non-PhD) from 1 January 2027 &mdash; we'll keep you updated on how this affects your timeline."),
-], eyebrow="Visa FAQs", title="Common visa &amp; IELTS questions")}
+    ("What is the difference between your services?", "Short courses and IELTS preparation build specific academic and exam skills. University recruitment and degree placement help students choose and secure the right university course. The Global Career Development Programme is our own academic programme, delivered directly by UK university lecturers and professors, with an optional experience in the UK."),
+    ("Do I have to choose only one service?", "No. Many students combine services, for example IELTS preparation alongside university recruitment, or the Global Career Development Programme alongside degree placement support later on."),
+    ("Who actually teaches the online academic module?", "UK university lecturers and professors teach every live session directly."),
+    ("Is the UK experience compulsory?", "No. Students can complete the full academic module and earn their certificate entirely online. The two week UK experience is an optional continuation for students who want to extend their learning in person."),
+    ("Does the programme help with university applications?", "The Global Career Development Programme is academic and professional development in its own right, though many students combine it with our university recruitment and degree placement support when they are ready to apply."),
+    ("Do you only work with students in Saudi Arabia?", "Saudi Arabia is our founding market and current focus. We plan to extend our services to more countries as we grow."),
+], eyebrow="Services FAQs", title="Common questions about our services")}
 
 <section class="bg-alt">
   <div class="container">
     <div class="cta-banner" data-reveal>
       <div class="container-inner">
-        <div><h2>Ready to check your visa eligibility?</h2><p>Send us your course offer or ask us anything about the process &mdash; we'll reply on WhatsApp within 24-48 hours.</p></div>
+        <div><h2>Ready to find out more?</h2><p>Message us on WhatsApp to talk through which of our services is the right fit, for your family or your school.</p></div>
         <div class="cta-actions">
-          <a class="btn btn-whatsapp" href="{whatsapp_link('Hi, I have a question about the UK Student visa process.')}" target="_blank" rel="noopener">{ICONS['whatsapp']} Ask on WhatsApp</a>
+          <a class="btn btn-whatsapp" href="{whatsapp_link()}" target="_blank" rel="noopener">{ICONS['whatsapp']} Chat on WhatsApp</a>
+          <a class="btn btn-outline-light" href="/schools.html">For Schools &amp; Colleges</a>
         </div>
       </div>
     </div>
@@ -622,28 +436,191 @@ visa_body = f"""
 """
 
 # ==========================================================================
-# TESTIMONIALS (kept content-free of fabricated reviews — see note below)
+# SCHOOLS & COLLEGES
+# ==========================================================================
+schools_body = f"""
+<main id="main">
+{page_hero('Schools &amp; Colleges', 'A partnership built for school principals', 'We work directly with school principals and colleges across Saudi Arabia, bringing short courses, university recruitment, degree placement, IELTS preparation and our Global Career Development Programme together in a partnership built around your students&rsquo; global future.', 'Schools & Colleges')}
+
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Why Partner With Us</div>
+      <h2>How this partnership benefits your students&rsquo; future</h2>
+      <p>A single, academically credible partner your school can offer with confidence, helping your students move toward university and their careers in the UK.</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['target']}</div><h3>Complete Support, One Partner</h3><p>From short courses to university recruitment, degree placement and IELTS preparation, we cover the services your students need for their next step, so your school does not have to coordinate several providers.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['award']}</div><h3>Strengthens Your Profile</h3><p>Offering a genuine pathway to UK study adds a real point of distinction for your school or college among parents.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['headset']}</div><h3>Low Effort for Your Team</h3><p>We design and deliver the services directly. Your staff simply help us reach the right students.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['cap']}</div><h3>Real Student Outcomes</h3><p>Students leave with practical progress toward their goals, from stronger IELTS scores to university offers and completed academic programmes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="split reverse">
+      <div class="split-media" data-reveal>{decorative_panel('users', 'For School Principals', 'A partnership you can stand behind with confidence')}</div>
+      <div>
+        <div class="eyebrow">For School Principals</div>
+        <h2>How the partnership works</h2>
+        <p style="margin:16px 0 22px;">We know a principal's time is limited, so we have kept our side of this simple. You introduce our services to your students and families. We handle everything directly: teaching, exam preparation, application guidance and university placement support, all under one partnership built around your students&rsquo; future.</p>
+        {check_list([
+            'We share clear, ready to use information for parents and students',
+            'Your school is not responsible for teaching or academic delivery',
+            'We stay in direct contact with your team throughout the partnership',
+        ])}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">What Your Partnership Can Include</div>
+      <h2>Benefits for your students&rsquo; global study future</h2>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal><h4>Short Courses</h4><p>Practical, focused courses that build specific academic skills and confidence.</p></div>
+      <div class="step" data-reveal><h4>IELTS Preparation</h4><p>Structured preparation toward each student&rsquo;s target score.</p></div>
+      <div class="step" data-reveal><h4>University Recruitment</h4><p>Guidance choosing universities and preparing strong applications.</p></div>
+      <div class="step" data-reveal><h4>Degree Placement</h4><p>Support securing the right degree place at a UK institution.</p></div>
+      <div class="step" data-reveal><h4>Global Career Programme</h4><p>Our flagship live online academic module, with an optional UK experience.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a class="btn btn-outline" href="/services.html">See Our Full Range of Services {ICONS['arrow-right']}</a>
+    </div>
+  </div>
+</section>
+
+{faq_section([
+    ("What does our school need to provide?", "Mainly your help introducing our services to students and families. We design and deliver the academic content, exam preparation and application support directly."),
+    ("Is there a cost to the school?", "There is no cost to your school to become a partner. Ask us on WhatsApp for the current arrangement for students and families."),
+    ("Can we see your services before recommending them to parents?", "Yes. We are happy to walk your team through a full outline of our services before you introduce them to families."),
+    ("Do you only work with schools in Saudi Arabia?", "Saudi Arabia is our founding market and current focus. We plan to extend school partnerships to more countries as we grow."),
+], eyebrow="Partner FAQs", title="Questions school principals ask us")}
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="cta-banner" data-reveal>
+      <div class="container-inner">
+        <div><h2>Interested in partnering with us?</h2><p>Message us on WhatsApp and we will walk you through our services in detail, principal to principal.</p></div>
+        <div class="cta-actions">
+          <a class="btn btn-whatsapp" href="{whatsapp_link('Hi, I am a school principal interested in partnering with UK Study Abroad.')}" target="_blank" rel="noopener">{ICONS['whatsapp']} WhatsApp Us</a>
+          <a class="btn btn-outline-light" href="/contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+"""
+
+# ==========================================================================
+# ELIGIBILITY & FAQS
+# ==========================================================================
+faqs_body = f"""
+<main id="main">
+{page_hero('Eligibility &amp; FAQs', 'Everything parents and students ask us', 'Practical answers on eligibility, our services, the UK experience and how the certificate works, in plain English.', 'FAQs')}
+
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Eligibility</div>
+      <h2>Who we can help</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['cap']}</div><h3>Any Academic Stage</h3><p>We support students at different stages, from those preparing with a short course or IELTS, to those ready for university recruitment, degree placement or our own academic programme.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['globe']}</div><h3>Saudi Arabia, Currently</h3><p>We are currently welcoming students and school partners across Saudi Arabia, with plans to extend to more countries over time.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['book']}</div><h3>Comfortable in English</h3><p>Sessions are taught in English. Students should be comfortable following and taking part in academic discussion in English.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="split">
+      <div>
+        <div class="eyebrow">Format &amp; Timing</div>
+        <h2>How the online module actually runs</h2>
+        <p style="margin:16px 0 22px;">Live sessions are held online and scheduled with Saudi Arabia time zones in mind, so students can join from home or school without disrupting their regular studies.</p>
+        {check_list([
+            'Live, scheduled sessions, not pre-recorded videos',
+            'Small international cohorts so every student can take part',
+            'A manageable weekly time commitment alongside regular school work',
+        ])}
+      </div>
+      <div data-reveal>{decorative_panel('cap', 'Live Online Sessions', 'Scheduled with Saudi Arabia time zones in mind')}</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="split reverse">
+      <div class="split-media" data-reveal>{decorative_panel('globe', 'Travelling to the UK', 'Guidance for the optional two week experience')}</div>
+      <div>
+        <div class="eyebrow">The UK Experience</div>
+        <h2>Travel, safeguarding and logistics</h2>
+        <p style="margin:16px 0 22px;">The UK experience is a short, two week visit, not a course of study, so it does not require a UK Student visa. Saudi nationals should check current UK visa requirements for a short visit well ahead of travel. We share full, up to date guidance directly with enrolled families closer to the travel dates.</p>
+        {check_list([
+            'A two week visit, continuing the academic module in person',
+            'Clear safeguarding and duty of care arrangements throughout the trip',
+            'Detailed travel information shared directly with enrolled families',
+        ])}
+      </div>
+    </div>
+  </div>
+</section>
+
+{faq_section([
+    ("Do I need a student visa for the UK experience?", "No. The UK experience is a short, two week visit rather than a course of study, so it does not require a UK Student visa. Saudi nationals should still check the latest UK visa requirements for short visits, and we guide enrolled families through this directly."),
+    ("What safeguarding is in place during the UK trip?", "Students are supervised throughout the UK experience by our team, with clear duty of care and safeguarding arrangements. We share full details with parents before travel."),
+    ("Is the certificate recognised by universities?", "The certificate recognises genuine academic and professional development completed on the programme. It is evidence of real UK academic engagement, not a university qualification or guaranteed entry pathway."),
+    ("Can a student complete the programme without travelling to the UK?", "Yes. The online academic module and final project can be completed entirely online, with the same certificate awarded on completion. The UK experience is an optional continuation."),
+    ("How do we enrol?", "Message us on WhatsApp or email and we will explain current dates, format and next steps for your family or your school."),
+])}
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="cta-banner" data-reveal>
+      <div class="container-inner">
+        <div><h2>Still have a question?</h2><p>Ask us directly on WhatsApp and we will reply as soon as we can.</p></div>
+        <div class="cta-actions">
+          <a class="btn btn-whatsapp" href="{whatsapp_link()}" target="_blank" rel="noopener">{ICONS['whatsapp']} Ask on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+"""
+
+# ==========================================================================
+# STUDENT EXPERIENCES (kept content-free of fabricated reviews, see note below)
 # ==========================================================================
 # This page intentionally does not include any student quotes: we only
 # publish real, verified reviews (with permission) once we have them. Update
 # this page directly once your first cohort of students is ready to share
-# feedback — a `testimonial()` helper and card styling already exist in
+# feedback. A `testimonial()` helper and card styling already exist in
 # build.py/style.css and can be reused at that point.
 testimonials_body = f"""
 <main id="main">
-{page_hero('Testimonials', "We're just getting started", 'UK Study Abroad launched to serve students in Saudi Arabia, and we only publish real, verified reviews from students we&rsquo;ve actually worked with — never invented ones. This page will fill up as our first cohort completes their journey.', 'Testimonials')}
+{page_hero('Student Experiences', "We're just getting started", 'UK Study Abroad launched to serve students and schools in Saudi Arabia across our study abroad services, and we only publish real, verified feedback from students we have actually worked with. This page will fill up as more students complete our services.', 'Student Experiences')}
 
 <section>
   <div class="container">
     <div class="section-head center">
       <div class="eyebrow">In the Meantime</div>
-      <h2>What you can expect from working with us</h2>
+      <h2>What you can expect from the programme</h2>
     </div>
     <div class="grid grid-4">
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['chat']}</div><h3>Free, No-Pressure Advice</h3><p>An honest first conversation with no obligation to sign up for anything.</p></div>
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['headset']}</div><h3>Fast WhatsApp Replies</h3><p>Real answers within 24-48 hours, in Saudi Arabia-friendly hours.</p></div>
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['shield']}</div><h3>Visa-Aware Guidance</h3><p>Every recommendation accounts for your Student visa eligibility from day one.</p></div>
-      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['target']}</div><h3>Matched, Not Mass-Marketed</h3><p>Course and university suggestions based on your grades and goals — not a fixed list.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['cap']}</div><h3>Genuine UK Academics</h3><p>Every session is taught directly by a UK university lecturer or professor.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['headset']}</div><h3>Fast WhatsApp Replies</h3><p>Real answers within 24 to 48 hours, in Saudi Arabia friendly hours.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['target']}</div><h3>A Real Academic Outcome</h3><p>A completed final project and a certificate, not just attendance.</p></div>
+      <div class="card value-card" data-reveal><div class="icon-wrap" style="margin:0 auto 20px;">{ICONS['heart']}</div><h3>Honest From Day One</h3><p>We only publish feedback that is real and verified, never invented.</p></div>
     </div>
   </div>
 </section>
@@ -652,7 +629,7 @@ testimonials_body = f"""
   <div class="container">
     <div class="cta-banner" data-reveal>
       <div class="container-inner">
-        <div><h2>Want to be our first success story?</h2><p>Book a free consultation and let's talk about your UK university plans.</p></div>
+        <div><h2>Want to be our first success story?</h2><p>Message us on WhatsApp and let's talk about the Global Career Development Programme.</p></div>
         <div class="cta-actions">
           <a class="btn btn-whatsapp" href="{whatsapp_link()}" target="_blank" rel="noopener">{ICONS['whatsapp']} WhatsApp Us</a>
         </div>
@@ -669,20 +646,10 @@ def post_card(icon, panel_label, category, date, title, desc, href):
   <div class="post-body"><div class="post-meta"><span>{category}</span><span>{date}</span></div><h3>{title}</h3><p>{desc}</p><a class="card-link" href="{href}">Read Article {ICONS['arrow-right']}</a></div>
 </div>"""
 
-POSTS = [
-    dict(icon='passport', panel='Visa Guide', category='Visas', date='2026', slug='blog-visa-guide.html',
-         title='UK Student Visa Guide for Saudi Students (2026)',
-         desc="Everything you need to know about the Student Route visa — CAS, finances, IHS and timelines."),
-    dict(icon='book', panel='IELTS Guide', category='English Tests', date='2026', slug='blog-ielts-guide.html',
-         title='IELTS Requirements for UK Universities: What You Need to Know',
-         desc="What score you actually need, which test to book, and how it affects your visa application."),
-    dict(icon='compass', panel='City Guide', category='Student Life', date='2026', slug='blog-top-cities.html',
-         title='Top UK Cities for International Students',
-         desc="A practical comparison of cost of living, community and university options across the UK."),
-]
+POSTS = []
 
 # ==========================================================================
-# BLOG (index)
+# INSIGHTS (blog index)
 # ==========================================================================
 blog_cards = "\n".join(
     post_card(p['icon'], p['panel'], p['category'], p['date'], p['title'], p['desc'], "/" + p['slug'])
@@ -691,14 +658,16 @@ blog_cards = "\n".join(
 
 blog_body = f"""
 <main id="main">
-{page_hero('Blog', 'Guides &amp; insights for your UK journey', 'Practical, plain-English articles to help you plan your application, visa and move to the United Kingdom.', 'Blog')}
+{page_hero('Insights', 'Guides on global academic development', 'Practical articles on academic development, global career skills and preparing for UK university teaching. New articles are on their way.', 'Insights')}
 
 <section>
   <div class="container">
     <div class="grid grid-3">
-      {blog_cards}
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['cap']}</div><h3>Academic Skills</h3><p>What genuinely helps ambitious students build university level academic thinking, from people who teach at UK universities.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['users']}</div><h3>Global Career Skills</h3><p>Communication, teamwork and cross cultural confidence, and why universities and employers value them so highly.</p></div>
+      <div class="card" data-reveal><div class="icon-wrap">{ICONS['globe']}</div><h3>Life As an International Student</h3><p>Honest, practical insights on studying and travelling internationally as a teenager, from our own academic team.</p></div>
     </div>
-    <p class="table-note" style="text-align:center;margin-top:36px;">More articles coming soon. Have a question you'd like us to cover? <a href="/contact.html" style="color:var(--teal-700);font-weight:700;">Send us a message</a>.</p>
+    <p class="table-note" style="text-align:center;margin-top:36px;">Our first articles are on their way. Have a question you would like us to cover? <a href="/contact.html" style="color:var(--teal-700);font-weight:700;">Send us a message</a>.</p>
   </div>
 </section>
 </main>
@@ -706,8 +675,8 @@ blog_body = f"""
 
 build_page(
     "blog.html",
-    "Blog | UK Study Abroad",
-    "Guides and insights on UK student visas, IELTS requirements and student life, written for students applying from Saudi Arabia.",
+    "Insights | UK Study Abroad",
+    "Articles on academic development, global career skills and preparing for UK university teaching, from UK Study Abroad's Global Career Development Programme.",
     "blog.html",
     blog_body,
 )
@@ -750,102 +719,17 @@ def blog_post_page(slug, title, category, date, read_time, intro, body_html, rel
     build_page(slug, f"{title} | UK Study Abroad Blog", f"{title} — a practical guide from UK Study Abroad.", "blog.html", content)
 
 
-# ---- Post 1: Visa Guide ----
-blog_post_page(
-    "blog-visa-guide.html",
-    "UK Student Visa Guide for Saudi Students (2026)",
-    "Visas", "2026", "6 min",
-    "If you're planning to study in the United Kingdom, understanding the Student Route visa early will save you time, stress and money. Here's a plain-English walkthrough of how it works.",
-    f"""
-<h2>1. Get your CAS from your university</h2>
-<p>Before you can apply for a visa, your UK university (a licensed student sponsor) must issue you a Confirmation of Acceptance for Studies (CAS) — a unique reference number confirming your place on the course. This is usually issued once you've met any conditions on your offer, such as final grades or a tuition deposit.</p>
-
-<h2>2. Prove your English language ability</h2>
-<p>Most applicants need to demonstrate English proficiency equivalent to CEFR level B2 for degree-level study, or B1 for below-degree courses. This is usually done through an approved Secure English Language Test (SELT) such as UKVI IELTS, unless you're exempt — for example, if you already hold a UK degree.</p>
-
-<h2>3. Show you can financially support yourself</h2>
-<p>You'll need to show evidence of funds covering your course fees (as stated on your CAS) plus a monthly living cost allowance — currently around £1,529 per month for courses in London, or £1,171 per month outside London, for up to 9 months. This money generally needs to sit in your account for a continuous 28-day period, ending within 31 days of your application date.</p>
-
-<h2>4. Submit your application and pay the fees</h2>
-<p>You can apply online up to 6 months before your course starts if you're applying from outside the UK. Along with the visa application fee, you'll need to pay the Immigration Health Surcharge (IHS), which gives you access to the NHS during your stay.</p>
-
-<h2>5. Attend your biometric appointment</h2>
-<p>As part of your application, you'll usually need to visit a visa application centre to provide fingerprints and a photo (biometric information).</p>
-
-<h2>6. Wait for your decision</h2>
-<p>Processing times vary, but applications from outside the UK are often decided within around 3 weeks. Once approved, you'll receive your visa vignette and can start planning your travel.</p>
-
-<blockquote>Fees and financial requirements change periodically. Always confirm the latest figures on gov.uk, or ask us directly — we track these updates so you don't have to.</blockquote>
-""",
-    ["blog-ielts-guide.html", "blog-top-cities.html"],
-)
-print("BLOG post: visa guide done")
-
-# ---- Post 2: IELTS Guide ----
-blog_post_page(
-    "blog-ielts-guide.html",
-    "IELTS Requirements for UK Universities: What You Need to Know",
-    "English Tests", "2026", "5 min",
-    "English test scores are one of the most common sources of confusion for students applying to the UK. Here's how to figure out exactly what you need.",
-    f"""
-<h2>Which test do you actually need?</h2>
-<p>For your visa application, the UK Home Office requires a Secure English Language Test (SELT) from an approved provider — most commonly UKVI IELTS (also called IELTS for UKVI). This is different from the standard "Academic" or "General Training" IELTS you may take for other purposes, so always check which version your university and visa application require before booking.</p>
-
-<h2>What score do you need?</h2>
-<p>Requirements are generally tied to your course level:</p>
-<ul>
-<li><strong>Degree-level courses</strong> (Bachelor's, Master's and above): equivalent to CEFR level B2</li>
-<li><strong>Below degree-level courses</strong> (foundation or pathway programmes): equivalent to CEFR level B1</li>
-</ul>
-<p>Many universities also set their own minimum overall band score and minimum scores per skill (reading, writing, listening, speaking) — so it's worth checking your specific course page or asking your admissions team directly.</p>
-
-<h2>Are you exempt from taking a test?</h2>
-<p>You may not need to sit an English test if you already hold a bachelor's degree or higher taught in English (subject to an assessment from Ecctis for non-UK degrees), or a relevant UK qualification such as GCSEs or A-levels.</p>
-
-<h2>How should you prepare?</h2>
-<p>Give yourself enough runway — most students benefit from at least 6-8 weeks of focused preparation, particularly for the writing and speaking sections. Book your test early enough that you have time to retake it if needed, without delaying your CAS or visa timeline.</p>
-
-<blockquote>Don't overspend on test preparation before you know your target score. We'll help you confirm the exact requirement for your course first.</blockquote>
-""",
-    ["blog-visa-guide.html", "blog-top-cities.html"],
-)
-print("BLOG post: ielts guide done")
-
-# ---- Post 3: Top Cities ----
-blog_post_page(
-    "blog-top-cities.html",
-    "Top UK Cities for International Students",
-    "Student Life", "2026", "6 min",
-    "Choosing where to study in the UK is about far more than league tables. Here's a practical look at some of the most popular cities for international students.",
-    f"""
-<h2>London</h2>
-<p>Home to some of the world's most recognised universities, plus unmatched career and networking opportunities. Living costs are higher than the rest of the UK, which is reflected in the visa financial requirement (£1,529/month vs £1,171/month elsewhere).</p>
-
-<h2>Manchester</h2>
-<p>A large, diverse student city with a lower cost of living than London, strong transport links, and a well-established international student community.</p>
-
-<h2>Birmingham</h2>
-<p>Centrally located with excellent rail connections to the rest of the UK, home to respected business schools and a growing international population.</p>
-
-<h2>Edinburgh &amp; Glasgow</h2>
-<p>Scotland's two largest cities offer historic campuses, strong research reputations, and generally lower living costs than London — plus a distinct cultural experience within the UK.</p>
-
-<h2>Coventry &amp; Sheffield</h2>
-<p>Both offer modern campuses, a lower cost of living, and universities known for being genuinely welcoming to international and first-generation students.</p>
-
-<h2>How to choose</h2>
-<p>Weigh these factors: total cost of living against your budget, the specific course strength at each university (not just city reputation), the size of the existing Arabic-speaking or Saudi student community, and how easily you can travel home for holidays. We help students compare all of this side by side before making a final decision.</p>
-""",
-    ["blog-visa-guide.html", "blog-ielts-guide.html"],
-)
-print("BLOG post: top cities done")
+# Blog posts will be added here once the first Insights articles are written.
+# The blog_post_page() helper above is ready to use: call it with a slug,
+# title, category, date, read time, intro and body HTML once you have real
+# articles on academic development, global career skills or the UK experience.
 
 # ==========================================================================
 # CONTACT
 # ==========================================================================
 contact_body = f"""
 <main id="main">
-{page_hero('Contact Us', "Let's talk about your UK plans", "Reach out on WhatsApp for the fastest reply, or send us a message using the form below. We aim to respond within 24-48 hours.", 'Contact')}
+{page_hero('Contact Us', "Let's talk about your student's global future", "Reach out on WhatsApp for the fastest reply, or send us a message using the form below. We aim to respond within 24 to 48 hours.", 'Contact')}
 
 <section>
   <div class="container">
@@ -853,27 +737,27 @@ contact_body = f"""
       <div>
         <div class="contact-card" data-reveal>
           <div class="icon-wrap">{ICONS['whatsapp']}</div>
-          <div><h4>WhatsApp</h4><p>Fastest way to reach us — chat with a real advisor.</p><a class="value" href="{whatsapp_link()}" target="_blank" rel="noopener">{WHATSAPP_DISPLAY}</a></div>
+          <div><h4>WhatsApp</h4><p>The fastest way to reach us. Chat directly with our team.</p><a class="value" href="{whatsapp_link()}" target="_blank" rel="noopener">{WHATSAPP_DISPLAY}</a></div>
         </div>
         <div class="contact-card" data-reveal>
           <div class="icon-wrap">{ICONS['mail']}</div>
-          <div><h4>Email</h4><p>For documents, applications and anything non-urgent.</p><a class="value" href="mailto:{EMAIL}">{EMAIL}</a></div>
+          <div><h4>Email</h4><p>For detailed questions, school partnerships and anything non-urgent.</p><a class="value" href="mailto:{EMAIL}">{EMAIL}</a></div>
         </div>
         <div class="contact-card" data-reveal>
           <div class="icon-wrap">{ICONS['clock']}</div>
-          <div><h4>Response Hours</h4><p>We reply in Saudi Arabia-friendly hours (AST), typically within 24-48 hours on WhatsApp and email.</p></div>
+          <div><h4>Response Hours</h4><p>We reply in Saudi Arabia friendly hours (AST), typically within 24 to 48 hours on WhatsApp and email.</p></div>
         </div>
         <div class="contact-card" data-reveal>
           <div class="icon-wrap">{ICONS['pin']}</div>
-          <div><h4>Who We Serve</h4><p>Currently supporting students across the Kingdom of Saudi Arabia — Riyadh, Jeddah, Dammam and beyond.</p></div>
+          <div><h4>Who We Serve</h4><p>Currently welcoming students and school partners across the Kingdom of Saudi Arabia.</p></div>
         </div>
       </div>
 
       <div class="form-card" data-reveal>
         <h3 style="margin-bottom:8px;">Send us a message</h3>
-        <p style="margin-bottom:26px;font-size:0.94rem;">Tell us a little about your goals and we'll get back to you with clear next steps.</p>
+        <p style="margin-bottom:26px;font-size:0.94rem;">Tell us a little about your student or your school and we will get back to you with clear next steps.</p>
         <form id="contact-form">
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="access_key" value="fac1cb50-58f2-4bea-a973-c5e221bec7d1">
           <input type="hidden" name="subject" value="New enquiry from ukstudyabroad.co.uk">
           <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
           <div class="form-row">
@@ -884,16 +768,17 @@ contact_body = f"""
             <div class="field"><label for="email">Email Address</label><input type="email" id="email" name="email" required placeholder="you@example.com"></div>
             <div class="field"><label for="interest">I'm Interested In</label>
               <select id="interest" name="interest">
-                <option>Free Consultation</option>
-                <option>University Application</option>
-                <option>Student Visa Guidance</option>
-                <option>IELTS Guidance</option>
-                <option>Scholarships</option>
+                <option>Short Courses</option>
+                <option>University Recruitment &amp; Applications</option>
+                <option>Degree Placement</option>
+                <option>IELTS Preparation</option>
+                <option>The Global Career Development Programme</option>
+                <option>School or College Partnership</option>
                 <option>Something Else</option>
               </select>
             </div>
           </div>
-          <div class="field"><label for="message">Your Message</label><textarea id="message" name="message" required placeholder="Tell us about your grades, budget and preferred course or city..."></textarea></div>
+          <div class="field"><label for="message">Your Message</label><textarea id="message" name="message" required placeholder="Tell us about your goals, your school and what you would like to know..."></textarea></div>
           <button type="submit" class="btn btn-primary btn-block">Send Message</button>
           <div class="form-status"></div>
           <p class="form-note">By submitting, you agree to be contacted by UK Study Abroad via email, phone or WhatsApp about your enquiry. We do not share your information with third parties.</p>
@@ -937,13 +822,13 @@ legal_wrap = lambda title, current, body: f"""
 """
 
 privacy_body = """
-<p>UK Study Abroad ("we", "us", "our") respects your privacy. This page explains, in general terms, how we collect and use information when you use this website or contact us via WhatsApp, email or our contact form.</p>
+<p>UK Study Abroad ("we", "us", "our") respects your privacy. This page explains, in general terms, how we collect and use information when you use this website, enrol in one of our services, or contact us via WhatsApp, email or our contact form.</p>
 <h2>Information We Collect</h2>
-<p>When you submit our contact form or message us directly, we may collect your name, email address, phone/WhatsApp number, and any details you choose to share about your study plans.</p>
+<p>When you submit our contact form or message us directly, we may collect your name, email address, phone/WhatsApp number, your student's school and study goals, and any other details you choose to share.</p>
 <h2>How We Use Your Information</h2>
-<p>We use the information you provide to respond to your enquiry, offer consultation and application support, and — with your consent — send you relevant updates about our services.</p>
+<p>We use the information you provide to respond to your enquiry, deliver the service you have enrolled in, and, with your consent, send you relevant updates about our services.</p>
 <h2>Data Sharing</h2>
-<p>We do not sell your personal information. We may share necessary details with UK universities or visa application services strictly as part of delivering the services you request from us.</p>
+<p>We do not sell your personal information. We may share necessary details with our academic delivery team, university admissions teams, or UK travel and accommodation providers strictly as part of delivering the service you have enrolled in.</p>
 <h2>Your Rights</h2>
 <p>You can ask us at any time to access, correct, or delete the personal information we hold about you by contacting us at the email address on our Contact page.</p>
 <p style="margin-top:30px;font-size:0.85rem;color:var(--gray-500);"><em>This is a general-purpose placeholder policy. Please review it with a qualified legal advisor and update it to reflect your actual data practices, tools (such as your chosen form provider) and any applicable Saudi Arabian or UK data protection requirements before publishing this site live.</em></p>
@@ -953,10 +838,10 @@ print("PRIVACY done")
 
 terms_body = """
 <p>These Terms of Use govern your use of the UK Study Abroad website. By using this site, you agree to these terms.</p>
-<h2>Educational Guidance, Not a Guarantee</h2>
-<p>UK Study Abroad provides counselling and application support. We do not control, and cannot guarantee, decisions made by universities or by UK Visas &amp; Immigration.</p>
+<h2>Our Services, Not a Guarantee</h2>
+<p>UK Study Abroad provides study abroad services including short courses, university recruitment and application support, degree placement, IELTS preparation and our Global Career Development Programme. Completion of any course, programme or application support we provide does not guarantee admission to any university, a specific exam score, or any specific career outcome.</p>
 <h2>Accuracy of Information</h2>
-<p>We aim to keep visa, IELTS and university information accurate and up to date, but rules and fees can change. Always confirm time-sensitive details directly with us or via official government sources before making decisions.</p>
+<p>We aim to keep service, travel and eligibility information accurate and up to date, but details can change. Always confirm time-sensitive details directly with us before making decisions.</p>
 <h2>Intellectual Property</h2>
 <p>All content on this site, including our logo and branding, belongs to UK Study Abroad unless otherwise stated.</p>
 <h2>Contact</h2>
@@ -969,7 +854,7 @@ print("TERMS done")
 build_page(
     "contact.html",
     "Contact Us | UK Study Abroad",
-    "Get in touch with UK Study Abroad via WhatsApp, email or our contact form to start your UK university application.",
+    "Get in touch with UK Study Abroad via WhatsApp, email or our contact form to learn more about our study abroad services.",
     "contact.html",
     contact_body,
 )
@@ -977,35 +862,35 @@ print("CONTACT done")
 
 build_page(
     "testimonials.html",
-    "Student Testimonials | UK Study Abroad",
-    "Read what students say about applying to UK universities and securing their Student visa with UK Study Abroad's guidance.",
+    "Student Experiences | UK Study Abroad",
+    "Read what students and schools say about UK Study Abroad's short courses, university recruitment, degree placement, IELTS preparation and Global Career Development Programme.",
     "testimonials.html",
     testimonials_body,
 )
 print("TESTIMONIALS done")
 
 build_page(
-    "visa-ielts.html",
-    "UK Student Visa &amp; IELTS Guidance | UK Study Abroad",
-    "A clear guide to the UK Student Route visa process, costs, financial requirements and IELTS/English language requirements for students applying from Saudi Arabia.",
-    "visa-ielts.html",
-    visa_body,
+    "faqs.html",
+    "Eligibility &amp; FAQs | UK Study Abroad",
+    "Eligibility, format, travel and certificate questions answered about UK Study Abroad's services, including the Global Career Development Programme.",
+    "faqs.html",
+    faqs_body,
 )
-print("VISA-IELTS done")
+print("FAQS done")
 
 build_page(
-    "destinations.html",
-    "Study Destinations &amp; UK Universities | UK Study Abroad",
-    "Compare popular UK study cities, courses and university types for international students, including guidance tailored to students from Saudi Arabia.",
-    "destinations.html",
-    destinations_body,
+    "schools.html",
+    "Schools &amp; Colleges | UK Study Abroad",
+    "Partner with UK Study Abroad to give your students real benefits for their global study future in the UK, through short courses, university recruitment, degree placement, IELTS preparation and our Global Career Development Programme.",
+    "schools.html",
+    schools_body,
 )
-print("DESTINATIONS done")
+print("SCHOOLS done")
 
 build_page(
     "services.html",
     "Our Services | UK Study Abroad",
-    "Explore UK Study Abroad's full range of services: free counselling, university applications, Student Route visa guidance, IELTS support, scholarships and pre-departure help.",
+    "Short courses, university recruitment, degree placement, IELTS preparation and the Global Career Development Programme, a live online academic module with an optional UK experience.",
     "services.html",
     services_body,
 )
@@ -1014,7 +899,7 @@ print("SERVICES done")
 build_page(
     "about.html",
     "About Us | UK Study Abroad",
-    "Learn how UK Study Abroad helps students in Saudi Arabia apply to UK universities with honest, visa-aware guidance from a dedicated team.",
+    "UK Study Abroad is a study abroad consultancy offering short courses, university recruitment, degree placement, IELTS preparation and the Global Career Development Programme, taught directly by UK university lecturers and professors.",
     "about.html",
     about_body,
 )

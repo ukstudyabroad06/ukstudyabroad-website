@@ -14,7 +14,7 @@ import re
 
 SITE_NAME = "UK Study Abroad"
 SITE_DOMAIN = "https://ukstudyabroad.co.uk"
-SITE_TAGLINE = "Your Future, Our Mission"
+SITE_TAGLINE = "Learn Online. Think Globally. Experience the UK."
 WHATSAPP_NUMBER = "447792646769"  # no +, no spaces (wa.me format)
 WHATSAPP_DISPLAY = "+44 7792 646769"
 EMAIL = "info@ukstudyabroad.co.uk"
@@ -24,9 +24,8 @@ NAV = [
     ("index.html", "Home"),
     ("about.html", "About"),
     ("services.html", "Services"),
-    ("destinations.html", "Destinations"),
-    ("visa-ielts.html", "Visa & IELTS"),
-    ("blog.html", "Blog"),
+    ("schools.html", "Schools & Colleges"),
+    ("blog.html", "Insights"),
     ("contact.html", "Contact"),
 ]
 
@@ -60,7 +59,7 @@ ICONS = {
 }
 
 
-def whatsapp_link(message="Hi UK Study Abroad, I'd like to know more about studying in the UK."):
+def whatsapp_link(message="Hi UK Study Abroad, I'd like to know more about your services."):
     from urllib.parse import quote
     return f"https://wa.me/{WHATSAPP_NUMBER}?text={quote(message)}"
 
@@ -106,10 +105,9 @@ def head(title, description, path, og_image="assets/images/og-image.jpg", extra=
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "{SITE_NAME}",
-  "alternateName": "UK Study Abroad Consultancy",
   "url": "{SITE_DOMAIN}",
   "logo": "{SITE_DOMAIN}/assets/images/logo-full-web.png",
-  "description": "UK Study Abroad helps students, with an initial focus on Saudi Arabia, apply to UK universities, secure student visas, and prepare for life and study in the United Kingdom.",
+  "description": "UK Study Abroad is a UK based study abroad consultancy offering short courses, university recruitment and application support, degree placement, IELTS preparation and the Global Career Development Programme, a live online academic module with an optional in person experience in the UK. Currently serving students and school partners across Saudi Arabia.",
   "email": "{EMAIL}",
   "areaServed": ["Saudi Arabia", "United Kingdom"],
   "sameAs": []
@@ -161,7 +159,6 @@ def footer():
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="/assets/images/logo-full-web.png" alt="UK Study Abroad" width="220">
-        <p>Independent UK study-abroad consultancy helping students plan, apply and get visa-ready for university life in the United Kingdom — with dedicated support for students applying from Saudi Arabia.</p>
         <div class="footer-social" aria-label="Social media">
           <a href="https://www.instagram.com/ukstudyabroadofficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
           <a href="https://www.facebook.com/ukstudyabroad" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1Z"/></svg></a>
@@ -172,27 +169,27 @@ def footer():
         <h5>Explore</h5>
         <ul>
           <li><a href="/about.html">About Us</a></li>
-          <li><a href="/services.html">Our Services</a></li>
-          <li><a href="/destinations.html">Study Destinations</a></li>
-          <li><a href="/testimonials.html">Testimonials</a></li>
-          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/schools.html">Schools &amp; Colleges</a></li>
+          <li><a href="/testimonials.html">Student Experiences</a></li>
+          <li><a href="/blog.html">Insights</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Services</h5>
+        <h5>Our Services</h5>
         <ul>
-          <li><a href="/services.html#counselling">Free Consultation</a></li>
-          <li><a href="/services.html#applications">University Applications</a></li>
-          <li><a href="/visa-ielts.html">Visa Guidance</a></li>
-          <li><a href="/visa-ielts.html#ielts">IELTS Preparation</a></li>
-          <li><a href="/services.html#scholarships">Scholarships</a></li>
+          <li><a href="/services.html#short-courses">Short Courses</a></li>
+          <li><a href="/services.html#recruitment">University Recruitment</a></li>
+          <li><a href="/services.html#degree-placement">Degree Placement</a></li>
+          <li><a href="/services.html#ielts">IELTS Preparation</a></li>
+          <li><a href="/services.html#global-career-programme">Global Career Development Programme</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Get in Touch</h5>
         <div class="contact-line">{ICONS['mail']}<a href="mailto:{EMAIL}">{EMAIL}</a></div>
         <div class="contact-line">{ICONS['whatsapp']}<a href="{whatsapp_link()}" target="_blank" rel="noopener">{WHATSAPP_DISPLAY}</a></div>
-        <div class="contact-line">{ICONS['pin']}<span>London, United Kingdom — serving students across the Kingdom of Saudi Arabia (Riyadh · Jeddah · Dammam) and beyond.</span></div>
+        <div class="contact-line">{ICONS['pin']}<span>London, United Kingdom. Serving students and schools across the Kingdom of Saudi Arabia and beyond.</span></div>
         <a href="/contact.html" class="btn btn-outline btn-sm" style="margin-top:8px;">Contact Us</a>
       </div>
     </div>

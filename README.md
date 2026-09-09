@@ -1,6 +1,6 @@
 # UK Study Abroad — Website
 
-A fast, modern, static website for **UK Study Abroad** (`ukstudyabroad.co.uk`), an independent UK study-abroad consultancy launching with a focus on students in Saudi Arabia.
+A fast, modern, static website for **UK Study Abroad** (`ukstudyabroad.co.uk`), a study abroad consultancy offering short courses, university recruitment and application support, degree placement, IELTS preparation and the Global Career Development Programme, a live online academic module taught directly by UK university lecturers and professors, with an optional two week in person experience in the UK. Currently focused on students, parents and schools in Saudi Arabia.
 
 No framework, no build step required to run — plain HTML5, CSS3 and vanilla JavaScript. This means it deploys anywhere as static files (Cloudflare Pages, GitHub Pages, Netlify, any web host) with zero configuration.
 
@@ -11,14 +11,11 @@ No framework, no build step required to run — plain HTML5, CSS3 and vanilla Ja
 ```
 ├── index.html                 Home
 ├── about.html                 About Us
-├── services.html              Services
-├── destinations.html          Study Destinations
-├── visa-ielts.html            Visa & IELTS guidance
-├── testimonials.html          Testimonials
-├── blog.html                  Blog index
-├── blog-visa-guide.html       Article: UK Student Visa Guide
-├── blog-ielts-guide.html      Article: IELTS Requirements
-├── blog-top-cities.html       Article: Top UK Cities
+├── services.html               Our Services (short courses, recruitment, degree placement, IELTS, Global Career Development Programme)
+├── schools.html                Schools & Colleges (partnership pitch for principals)
+├── faqs.html                  Eligibility & FAQs
+├── testimonials.html          Student Experiences
+├── blog.html                  Insights (blog index, ready for future articles)
 ├── contact.html               Contact page + enquiry form
 ├── privacy-policy.html / terms.html / 404.html
 ├── assets/
@@ -34,17 +31,12 @@ No framework, no build step required to run — plain HTML5, CSS3 and vanilla Ja
 
 ---
 
-## 2. Before you go live — please do these 4 things
+## 2. Before you go live — please do these things
 
-The site is fully designed and populated with real UK visa/IELTS facts, but a few things are intentionally placeholders you should update:
-
-1. **Testimonials** (`index.html`, `testimonials.html`) — currently sample quotes, clearly marked. Replace with real, verified student reviews before publishing.
-2. **Team section** (`about.html`) — generic role placeholders (Founder, Admissions Specialist, etc.). Update with real names/titles once ready, or leave generic if you prefer not to name staff yet.
-3. **Contact form** (`contact.html`) — needs a free [Web3Forms](https://web3forms.com) access key to actually send emails (takes 2 minutes, no backend needed):
-   - Go to web3forms.com → enter `info@ukstudyabroad.co.uk` → get your Access Key by email.
-   - Open `contact.html`, find `value="YOUR_WEB3FORMS_ACCESS_KEY"` and replace it with your real key.
-   - Until you do this, the form shows a friendly message directing visitors to WhatsApp/email instead of failing silently.
-4. **University partner list** (`destinations.html`) — shown as general examples, not a claim of partnership. Update with your actual confirmed partner universities.
+1. **Testimonials** (`testimonials.html`) — this page intentionally has no quotes yet. Only add real, verified feedback from students who have actually completed the programme. Never publish invented reviews.
+2. **Team section** (`about.html`) — generic role placeholders (Founder & Programme Director, Academic Lead, Partnerships Lead, Student Experience Coordinator). Update with real names once ready, or leave generic if you prefer not to name staff yet.
+3. **Contact form** (`contact.html`) — sends through [Web3Forms](https://web3forms.com) using an access key already set on the hidden `access_key` field. If you ever need to change it, get a new key at web3forms.com with `info@ukstudyabroad.co.uk` and swap the value in `contact.html` (and in `generate.py` so it survives a regeneration).
+4. **Insights articles** (`blog.html`) — currently a teaser page with no published articles. Add real articles as `blog_post_page()` calls in `generate.py` when you have genuine content ready (see §4).
 
 ---
 
