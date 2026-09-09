@@ -5,6 +5,28 @@ from build import (
     ICONS, build_page, decorative_panel, city_tile, check_list, whatsapp_link, EMAIL, WHATSAPP_DISPLAY
 )
 
+# ---------------------------------------------------------------------------
+# Small home-page-only styling helpers: tinted icons/cards and soft decorative
+# glow blobs, used to give the home page a little more depth and rhythm than
+# the inner pages, without touching style.css or the shared design system.
+# ---------------------------------------------------------------------------
+ACCENT_CYCLE = ["#14919b", "#7c4dbb", "#f0a93a"]  # teal, purple, gold
+
+def tint_icon(key, color):
+    """Returns an ICONS svg with its stroke/fill color overridden inline."""
+    return ICONS[key].replace("<svg ", f'<svg style="color:{color};" ', 1)
+
+def accent_card(icon_key, title, desc, color, extra=""):
+    return f"""<div class="card" data-reveal style="border-top:3px solid {color};">
+  <div class="icon-wrap" style="background:{color}1a;">{tint_icon(icon_key, color)}</div>
+  <h3>{title}</h3><p>{desc}</p>{extra}
+</div>"""
+
+def glow_blob(color, size="280px", **pos):
+    """pos: any of top/left/bottom/right as CSS length strings, e.g. top='-60px', left='-60px'."""
+    pos_css = "".join(f"{k}:{v};" for k, v in pos.items())
+    return f'<div style="position:absolute;{pos_css}width:{size};height:{size};background:{color};opacity:.16;border-radius:50%;filter:blur(60px);pointer-events:none;z-index:0;"></div>'
+
 # ==========================================================================
 # HOME
 # ==========================================================================
@@ -48,8 +70,10 @@ home_body = f"""
   </div>
 </section>
 
-<section class="bg-alt">
-  <div class="container">
+<section class="bg-alt" style="position:relative;overflow:hidden;">
+  {glow_blob("#14919b", top="-70px", right="-70px")}
+  {glow_blob("#7c4dbb", bottom="-90px", left="-90px")}
+  <div class="container" style="position:relative;z-index:1;">
     <div class="section-head center">
       <div class="eyebrow">How We Help</div>
       <h2>One partner for the whole journey to UK study.</h2>
@@ -68,11 +92,11 @@ home_body = f"""
       <p>Explore each service below, or message us on WhatsApp and we will help you find the right starting point.</p>
     </div>
     <div class="grid grid-3">
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['book']}</div><h3>Short Courses</h3><p>Focused, practical courses that build specific academic skills and confidence.</p><a class="card-link" href="/services.html#short-courses">Learn More {ICONS['arrow-right']}</a></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['doc-check']}</div><h3>University Recruitment</h3><p>Clear, honest guidance choosing universities and preparing a strong application.</p><a class="card-link" href="/services.html#recruitment">Learn More {ICONS['arrow-right']}</a></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['cap']}</div><h3>Degree Placement</h3><p>Support finding and securing the right degree place at a UK institution.</p><a class="card-link" href="/services.html#degree-placement">Learn More {ICONS['arrow-right']}</a></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['target']}</div><h3>IELTS Preparation</h3><p>Structured preparation that builds the exam skills and confidence for a strong score.</p><a class="card-link" href="/services.html#ielts">Learn More {ICONS['arrow-right']}</a></div>
-      <div class="card" data-reveal><div class="icon-wrap">{ICONS['globe']}</div><h3>Global Career Development Programme</h3><p>Our flagship live online academic module, with an optional UK experience.</p><a class="card-link" href="/services.html#global-career-programme">Learn More {ICONS['arrow-right']}</a></div>
+      {accent_card('book', 'Short Courses', 'Focused, practical courses that build specific academic skills and confidence.', ACCENT_CYCLE[0], f'<a class="card-link" href="/services.html#short-courses">Learn More {ICONS["arrow-right"]}</a>')}
+      {accent_card('doc-check', 'University Recruitment', 'Clear, honest guidance choosing universities and preparing a strong application.', ACCENT_CYCLE[1], f'<a class="card-link" href="/services.html#recruitment">Learn More {ICONS["arrow-right"]}</a>')}
+      {accent_card('cap', 'Degree Placement', 'Support finding and securing the right degree place at a UK institution.', ACCENT_CYCLE[2], f'<a class="card-link" href="/services.html#degree-placement">Learn More {ICONS["arrow-right"]}</a>')}
+      {accent_card('target', 'IELTS Preparation', 'Structured preparation that builds the exam skills and confidence for a strong score.', ACCENT_CYCLE[0], f'<a class="card-link" href="/services.html#ielts">Learn More {ICONS["arrow-right"]}</a>')}
+      {accent_card('globe', 'Global Career Development Programme', 'Our flagship live online academic module, with an optional UK experience.', ACCENT_CYCLE[1], f'<a class="card-link" href="/services.html#global-career-programme">Learn More {ICONS["arrow-right"]}</a>')}
     </div>
     <div style="text-align:center;margin-top:36px;">
       <a class="btn btn-primary" href="/services.html">See All Our Services {ICONS['arrow-right']}</a>
@@ -80,33 +104,18 @@ home_body = f"""
   </div>
 </section>
 
-<section class="bg-alt">
-  <div class="container">
+<section class="bg-alt" style="position:relative;overflow:hidden;">
+  {glow_blob("#f0a93a", bottom="-90px", right="-80px")}
+  <div class="container" style="position:relative;z-index:1;">
     <div class="section-head center">
       <div class="eyebrow">Why Families Choose Us</div>
       <h2>A single, trusted partner for the whole journey</h2>
     </div>
     <div class="grid grid-2">
-      <div class="card" data-reveal>
-        <div class="icon-wrap">{ICONS['cap']}</div>
-        <h3>Genuine UK academic access</h3>
-        <p>Our team includes real UK university lecturers and professors, so families get more than paperwork help. They get direct academic expertise.</p>
-      </div>
-      <div class="card" data-reveal>
-        <div class="icon-wrap">{ICONS['doc-check']}</div>
-        <h3>Complete application support</h3>
-        <p>From choosing courses to submitting a strong application, we guide students through university recruitment and degree placement from start to finish.</p>
-      </div>
-      <div class="card" data-reveal>
-        <div class="icon-wrap">{ICONS['book']}</div>
-        <h3>Exam and language preparation</h3>
-        <p>Structured IELTS preparation and short courses build the practical skills and confidence students need before they apply.</p>
-      </div>
-      <div class="card" data-reveal>
-        <div class="icon-wrap">{ICONS['users']}</div>
-        <h3>Trusted school partnerships</h3>
-        <p>We work directly with school principals and colleges across Saudi Arabia, giving their students real benefits through our partnership.</p>
-      </div>
+      {accent_card('cap', 'Genuine UK academic access', 'Our team includes real UK university lecturers and professors, so families get more than paperwork help. They get direct academic expertise.', ACCENT_CYCLE[1])}
+      {accent_card('doc-check', 'Complete application support', 'From choosing courses to submitting a strong application, we guide students through university recruitment and degree placement from start to finish.', ACCENT_CYCLE[2])}
+      {accent_card('book', 'Exam and language preparation', 'Structured IELTS preparation and short courses build the practical skills and confidence students need before they apply.', ACCENT_CYCLE[0])}
+      {accent_card('users', 'Trusted school partnerships', 'We work directly with school principals and colleges across Saudi Arabia, giving their students real benefits through our partnership.', ACCENT_CYCLE[1])}
     </div>
   </div>
 </section>

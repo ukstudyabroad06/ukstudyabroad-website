@@ -1,7 +1,7 @@
 {
   "name": "UK Study Abroad",
   "short_name": "UK Study Abroad",
-  "description": "UK Study Abroad — UK university admissions, visa and IELTS guidance, with an initial focus on students from Saudi Arabia.",
+  "description": "UK Study Abroad. Short courses, university recruitment, degree placement, IELTS preparation and the Global Career Development Programme, serving students and schools in Saudi Arabia.",
   "icons": [
     { "src": "/assets/images/favicon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/assets/images/favicon-512.png", "sizes": "512x512", "type": "image/png" }
