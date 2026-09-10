@@ -133,7 +133,7 @@
       if (!accessKey || accessKey.value.indexOf("YOUR_") === 0) {
         showStatus(
           "error",
-          "Form is not fully configured yet — please contact us directly via WhatsApp or email (see the buttons above) while the site owner finishes setup."
+          "Form is not fully configured yet. Please contact us directly via WhatsApp or email (see the buttons above) while the site owner finishes setup."
         );
         return;
       }

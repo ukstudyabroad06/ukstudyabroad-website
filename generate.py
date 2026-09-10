@@ -725,7 +725,7 @@ def blog_post_page(slug, title, category, date, read_time, intro, body_html, rel
 </section>
 </main>
 """
-    build_page(slug, f"{title} | UK Study Abroad Blog", f"{title} — a practical guide from UK Study Abroad.", "blog.html", content)
+    build_page(slug, f"{title} | UK Study Abroad Blog", f"{title}: a practical guide from UK Study Abroad.", "blog.html", content)
 
 
 # Blog posts will be added here once the first Insights articles are written.

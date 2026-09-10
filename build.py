@@ -106,7 +106,7 @@ def head(title, description, path, og_image="assets/images/og-image.jpg", extra=
   "@type": "EducationalOrganization",
   "name": "{SITE_NAME}",
   "url": "{SITE_DOMAIN}",
-  "logo": "{SITE_DOMAIN}/assets/images/logo-full-web.png",
+  "logo": "{SITE_DOMAIN}/assets/images/logo-horizontal.png",
   "description": "UK Study Abroad is a UK based study abroad consultancy offering short courses, university recruitment and application support, degree placement, IELTS preparation and the Global Career Development Programme, a live online academic module with an optional in person experience in the UK. Currently serving students and school partners across Saudi Arabia.",
   "email": "{EMAIL}",
   "areaServed": ["Saudi Arabia", "United Kingdom"],
@@ -157,7 +157,7 @@ def footer():
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="/assets/images/logo-full-web.png" alt="UK Study Abroad" width="220">
+        <img src="/assets/images/logo-horizontal.png" alt="UK Study Abroad">
         <div class="footer-social" aria-label="Social media">
           <a href="https://www.instagram.com/ukstudyabroadofficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
           <a href="https://www.facebook.com/ukstudyabroad" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1Z"/></svg></a>
