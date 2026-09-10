@@ -1,50 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ukstudyabroad.co.uk/index.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/" />
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ukstudyabroad.co.uk/about.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/about.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/about.html" />
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ukstudyabroad.co.uk/services.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/services.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/services.html" />
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ukstudyabroad.co.uk/schools.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/schools.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/schools.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/schools.html" />
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ukstudyabroad.co.uk/faqs.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/faqs.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/faqs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/faqs.html" />
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ukstudyabroad.co.uk/testimonials.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/testimonials.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/testimonials.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/testimonials.html" />
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ukstudyabroad.co.uk/blog.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/blog.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/blog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/blog.html" />
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ukstudyabroad.co.uk/contact.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/contact.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/contact.html" />
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ukstudyabroad.co.uk/ar/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/" />
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ukstudyabroad.co.uk/ar/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/about.html" />
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ukstudyabroad.co.uk/ar/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/services.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/services.html" />
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ukstudyabroad.co.uk/ar/schools.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/schools.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/schools.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/schools.html" />
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ukstudyabroad.co.uk/ar/faqs.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/faqs.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/faqs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/faqs.html" />
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ukstudyabroad.co.uk/ar/testimonials.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/testimonials.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/testimonials.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/testimonials.html" />
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ukstudyabroad.co.uk/ar/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/blog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/blog.html" />
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ukstudyabroad.co.uk/ar/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ukstudyabroad.co.uk/ar/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ukstudyabroad.co.uk/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ukstudyabroad.co.uk/contact.html" />
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

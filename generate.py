@@ -2,30 +2,9 @@
 # -*- coding: utf-8 -*-
 """Generates every page of the UK Study Abroad website from shared templates."""
 from build import (
-    ICONS, build_page, decorative_panel, city_tile, check_list, whatsapp_link, EMAIL, WHATSAPP_DISPLAY
+    ICONS, build_page, decorative_panel, city_tile, check_list, whatsapp_link, EMAIL, WHATSAPP_DISPLAY,
+    ACCENT_CYCLE, tint_icon, accent_card, glow_blob, page_hero, faq_section, arrow_icon,
 )
-
-# ---------------------------------------------------------------------------
-# Small home-page-only styling helpers: tinted icons/cards and soft decorative
-# glow blobs, used to give the home page a little more depth and rhythm than
-# the inner pages, without touching style.css or the shared design system.
-# ---------------------------------------------------------------------------
-ACCENT_CYCLE = ["#14919b", "#7c4dbb", "#f0a93a"]  # teal, purple, gold
-
-def tint_icon(key, color):
-    """Returns an ICONS svg with its stroke/fill color overridden inline."""
-    return ICONS[key].replace("<svg ", f'<svg style="color:{color};" ', 1)
-
-def accent_card(icon_key, title, desc, color, extra=""):
-    return f"""<div class="card" data-reveal style="border-top:3px solid {color};">
-  <div class="icon-wrap" style="background:{color}1a;">{tint_icon(icon_key, color)}</div>
-  <h3>{title}</h3><p>{desc}</p>{extra}
-</div>"""
-
-def glow_blob(color, size="280px", **pos):
-    """pos: any of top/left/bottom/right as CSS length strings, e.g. top='-60px', left='-60px'."""
-    pos_css = "".join(f"{k}:{v};" for k, v in pos.items())
-    return f'<div style="position:absolute;{pos_css}width:{size};height:{size};background:{color};opacity:.16;border-radius:50%;filter:blur(60px);pointer-events:none;z-index:0;"></div>'
 
 # ==========================================================================
 # HOME
@@ -99,7 +78,7 @@ home_body = f"""
       {accent_card('globe', 'Global Career Development Programme', 'Our flagship live online academic module, with an optional UK experience.', ACCENT_CYCLE[1], f'<a class="card-link" href="/services.html#global-career-programme">Learn More {ICONS["arrow-right"]}</a>')}
     </div>
     <div style="text-align:center;margin-top:36px;">
-      <a class="btn btn-primary" href="/services.html">See All Our Services {ICONS['arrow-right']}</a>
+      <a class="btn btn-primary" href="/services.html">See All Our Services {arrow_icon()}</a>
     </div>
   </div>
 </section>
@@ -135,7 +114,7 @@ home_body = f"""
             'A collaborative partnership shaped around your school and your students, not a one size fits all package',
         ])}
         </div>
-        <a class="btn btn-primary" href="/schools.html">Partner With Us {ICONS['arrow-right']}</a>
+        <a class="btn btn-primary" href="/schools.html">Partner With Us {arrow_icon()}</a>
       </div>
     </div>
   </div>
@@ -172,15 +151,6 @@ print("HOME done")
 # ==========================================================================
 # ABOUT
 # ==========================================================================
-def page_hero(eyebrow, title, desc, current_label):
-    return f"""<section class="page-hero">
-  <div class="container">
-    <div class="breadcrumb"><a href="/index.html">Home</a> <span>/</span> <span>{current_label}</span></div>
-    <div class="eyebrow" style="background:rgba(255,255,255,.12);color:var(--gold-400);">{eyebrow}</div>
-    <h1>{title}</h1>
-    <p>{desc}</p>
-  </div>
-</section>"""
 
 about_body = f"""
 <main id="main">
@@ -251,26 +221,6 @@ about_body = f"""
 </section>
 </main>
 """
-
-def faq_section(faqs, eyebrow="FAQs", title="Frequently asked questions"):
-    items = "\n".join(
-        f"""<div class="faq-item">
-  <button class="faq-q" aria-expanded="false"><span>{q}</span><span class="plus"></span></button>
-  <div class="faq-a"><p>{a}</p></div>
-</div>"""
-        for q, a in faqs
-    )
-    return f"""<section>
-  <div class="container">
-    <div class="section-head center">
-      <div class="eyebrow">{eyebrow}</div>
-      <h2>{title}</h2>
-    </div>
-    <div style="max-width:820px;margin:0 auto;">
-      {items}
-    </div>
-  </div>
-</section>"""
 
 
 # ==========================================================================
@@ -499,7 +449,7 @@ schools_body = f"""
       <div class="step" data-reveal><h4>Global Career Programme</h4><p>Our flagship live online academic module, with an optional UK experience.</p></div>
     </div>
     <div style="text-align:center;margin-top:36px;">
-      <a class="btn btn-outline" href="/services.html">See Our Full Range of Services {ICONS['arrow-right']}</a>
+      <a class="btn btn-outline" href="/services.html">See Our Full Range of Services {arrow_icon()}</a>
     </div>
   </div>
 </section>

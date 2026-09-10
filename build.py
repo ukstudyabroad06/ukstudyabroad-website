@@ -29,6 +29,15 @@ NAV = [
     ("contact.html", "Contact"),
 ]
 
+NAV_AR = [
+    ("index.html", "الرئيسية"),
+    ("about.html", "من نحن"),
+    ("services.html", "خدماتنا"),
+    ("schools.html", "المدارس والكليات"),
+    ("blog.html", "رؤى"),
+    ("contact.html", "تواصل معنا"),
+]
+
 ICONS = {
     "whatsapp": '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.14c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.12.11-1.8-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.79-4.16-4.94-4.35-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .9 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.29-.12.58.17.29.75 1.24 1.62 2.01 1.11.99 2.05 1.3 2.34 1.44.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.28.38-.24.63-.14.26.1 1.65.78 1.93.92.29.14.48.2.55.32.07.11.07.65-.17 1.33Z"/></svg>',
     "mail": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>',
@@ -59,6 +68,12 @@ ICONS = {
 }
 
 
+def arrow_icon():
+    """Wraps the arrow-right icon in a class the RTL stylesheet can mirror,
+    for use inline in buttons that aren't already covered by .card-link."""
+    return f'<span class="icon-arrow">{ICONS["arrow-right"]}</span>'
+
+
 def whatsapp_link(message="Hi UK Study Abroad, I'd like to know more about your services."):
     from urllib.parse import quote
     return f"https://wa.me/{WHATSAPP_NUMBER}?text={quote(message)}"
@@ -66,6 +81,8 @@ def whatsapp_link(message="Hi UK Study Abroad, I'd like to know more about your 
 
 def head(title, description, path, og_image="assets/images/og-image.jpg", extra=""):
     canonical = f"{SITE_DOMAIN}/{path}" if path != "index.html" else SITE_DOMAIN + "/"
+    ar_path = "" if path == "index.html" else path
+    ar_url = f"{SITE_DOMAIN}/ar/{ar_path}" if ar_path else f"{SITE_DOMAIN}/ar/"
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,6 +92,9 @@ def head(title, description, path, og_image="assets/images/og-image.jpg", extra=
 <title>{title}</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
+<link rel="alternate" hreflang="en" href="{canonical}">
+<link rel="alternate" hreflang="ar" href="{ar_url}">
+<link rel="alternate" hreflang="x-default" href="{canonical}">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -117,12 +137,77 @@ def head(title, description, path, og_image="assets/images/og-image.jpg", extra=
 """
 
 
-def header(active):
+def head_ar(title, description, path, og_image="assets/images/og-image.jpg", extra=""):
+    """Arabic <head>: same SEO scaffolding as head(), but dir=rtl, an Arabic
+    web font (Cairo for headings, Tajawal for body) alongside the Latin fonts
+    (the brand name and some UI stays in Latin), and hreflang pointed back at
+    the English original."""
+    bare = "" if path == "index.html" else path
+    canonical = f"{SITE_DOMAIN}/ar/{bare}" if bare else f"{SITE_DOMAIN}/ar/"
+    en_url = f"{SITE_DOMAIN}/{path}" if path != "index.html" else SITE_DOMAIN + "/"
+    return f"""<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js')</script>
+<title>{title}</title>
+<meta name="description" content="{description}">
+<link rel="canonical" href="{canonical}">
+<link rel="alternate" hreflang="ar" href="{canonical}">
+<link rel="alternate" hreflang="en" href="{en_url}">
+<link rel="alternate" hreflang="x-default" href="{en_url}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{SITE_NAME}">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{description}">
+<meta property="og:image" content="{SITE_DOMAIN}/{og_image}">
+<meta property="og:url" content="{canonical}">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{description}">
+<meta name="twitter:image" content="{SITE_DOMAIN}/{og_image}">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1b2951">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Cairo:wght@600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+{extra}
+<script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "{SITE_NAME}",
+  "url": "{SITE_DOMAIN}",
+  "logo": "{SITE_DOMAIN}/assets/images/logo-horizontal.png",
+  "description": "UK Study Abroad شركة استشارات بريطانية متخصصة في الدراسة بالخارج، تقدم دورات قصيرة، وخدمات القبول الجامعي والتقديم للجامعات، وتوفير المقاعد الجامعية، والتحضير لاختبار الأيلتس، وبرنامج التطوير المهني العالمي، وهو برنامج أكاديمي مباشر عبر الإنترنت مع تجربة اختيارية داخل المملكة المتحدة. نخدم حاليا الطلاب والمدارس الشريكة في المملكة العربية السعودية.",
+  "email": "{EMAIL}",
+  "areaServed": ["Saudi Arabia", "United Kingdom"],
+  "sameAs": []
+}}
+</script>
+</head>
+"""
+
+
+def header(active, page=None):
     ARIA_CURRENT = ' aria-current="page"'
     links = "\n".join(
         f'<a href="/{href}"{ARIA_CURRENT if href == active else ""}>{label}</a>'
         for href, label in NAV
     )
+    current = page if page is not None else active
+    ar_target = "/ar/" if current in ("", "index.html") else f"/ar/{current}"
     return f"""<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="container">
@@ -136,6 +221,7 @@ def header(active):
       {links}
     </nav>
     <div class="header-actions">
+      <a class="lang-switch" href="{ar_target}" aria-label="Switch to Arabic">العربية</a>
       <a class="phone-link" href="tel:+{WHATSAPP_NUMBER}">
         {ICONS['phone']}
         {WHATSAPP_DISPLAY}
@@ -144,6 +230,46 @@ def header(active):
         {ICONS['whatsapp']}<span class="btn-label">WhatsApp Us</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+"""
+
+
+def header_ar(active, page=None):
+    """Arabic header: RTL-mirrored nav order (browser handles this via
+    dir=rtl + CSS), Arabic nav labels, and a switch-to-English link."""
+    ARIA_CURRENT = ' aria-current="page"'
+    links = "\n".join(
+        f'<a href="/ar/{href}"{ARIA_CURRENT if href == active else ""}>{label}</a>'
+        for href, label in NAV_AR
+    )
+    current = page if page is not None else active
+    en_target = "/" if current in ("", "index.html") else f"/{current}"
+    return f"""<a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+<header class="site-header">
+  <div class="container">
+    <a href="/ar/index.html" class="brand">
+      <img src="/assets/images/logo-icon-web.png" alt="شعار UK Study Abroad" width="46" height="46">
+      <span class="brand-text">
+        <span class="brand-name">UK Study Abroad</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="التنقل الرئيسي">
+      {links}
+    </nav>
+    <div class="header-actions">
+      <a class="lang-switch" href="{en_target}" aria-label="Switch to English">English</a>
+      <a class="phone-link" href="tel:+{WHATSAPP_NUMBER}">
+        {ICONS['phone']}
+        {WHATSAPP_DISPLAY}
+      </a>
+      <a class="btn btn-primary" href="{whatsapp_link('مرحبا UK Study Abroad، أود معرفة المزيد عن خدماتكم.')}" target="_blank" rel="noopener">
+        {ICONS['whatsapp']}<span class="btn-label">راسلنا واتساب</span>
+      </a>
+      <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -215,6 +341,69 @@ def footer():
 """
 
 
+def footer_ar():
+    return f"""<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/images/logo-horizontal.png" alt="UK Study Abroad">
+        <div class="footer-social" aria-label="التواصل الاجتماعي">
+          <a href="https://www.instagram.com/ukstudyabroadofficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+          <a href="https://www.facebook.com/ukstudyabroad" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1Z"/></svg></a>
+          <a href="{whatsapp_link('مرحبا UK Study Abroad، أود معرفة المزيد عن خدماتكم.')}" target="_blank" rel="noopener" aria-label="WhatsApp">{ICONS['whatsapp']}</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>استكشف</h5>
+        <ul>
+          <li><a href="/ar/about.html">من نحن</a></li>
+          <li><a href="/ar/services.html">خدماتنا</a></li>
+          <li><a href="/ar/schools.html">المدارس والكليات</a></li>
+          <li><a href="/ar/testimonials.html">تجارب الطلاب</a></li>
+          <li><a href="/ar/blog.html">رؤى</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>خدماتنا</h5>
+        <ul>
+          <li><a href="/ar/services.html#short-courses">الدورات القصيرة</a></li>
+          <li><a href="/ar/services.html#recruitment">القبول الجامعي</a></li>
+          <li><a href="/ar/services.html#degree-placement">توفير المقاعد الجامعية</a></li>
+          <li><a href="/ar/services.html#ielts">التحضير لاختبار الأيلتس</a></li>
+          <li><a href="/ar/services.html#global-career-programme">برنامج التطوير المهني العالمي</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>تواصل معنا</h5>
+        <div class="contact-line">{ICONS['mail']}<a href="mailto:{EMAIL}">{EMAIL}</a></div>
+        <div class="contact-line">{ICONS['whatsapp']}<a href="{whatsapp_link('مرحبا UK Study Abroad، أود معرفة المزيد عن خدماتكم.')}" target="_blank" rel="noopener">{WHATSAPP_DISPLAY}</a></div>
+        <div class="contact-line">{ICONS['pin']}<span>لندن، المملكة المتحدة. نخدم الطلاب والمدارس في جميع أنحاء المملكة العربية السعودية وخارجها.</span></div>
+        <a href="/ar/contact.html" class="btn btn-outline btn-sm" style="margin-top:8px;">تواصل معنا</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {CURRENT_YEAR_PLACEHOLDER} UK Study Abroad. جميع الحقوق محفوظة.</p>
+      <div class="legal-links">
+        <a href="/ar/privacy-policy.html">سياسة الخصوصية</a>
+        <a href="/ar/terms.html">شروط الاستخدام</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="float-actions">
+  <button class="back-to-top" aria-label="العودة إلى الأعلى">{ICONS['arrow-up']}</button>
+  <a class="whatsapp-float" href="{whatsapp_link('مرحبا UK Study Abroad، أود معرفة المزيد عن خدماتكم.')}" target="_blank" rel="noopener" aria-label="راسلنا عبر واتساب">
+    {ICONS['whatsapp']}
+  </a>
+</div>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
+"""
+
+
 def decorative_panel(icon_key, big_label, small_label="", variant="brand"):
     """A photo-free decorative panel used in place of stock photography."""
     bg = {
@@ -263,8 +452,83 @@ def check_list(items):
 
 
 def build_page(path, title, description, active, body, extra_head=""):
-    html = head(title, description, path, extra=extra_head) + "<body>\n" + header(active) + body + footer()
+    html = head(title, description, path, extra=extra_head) + "<body>\n" + header(active, page=path) + body + footer()
     out_path = os.path.join(os.path.dirname(__file__), path)
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
     print("built", path)
+
+
+def build_page_ar(path, title, description, active, body, extra_head=""):
+    """Same as build_page() but renders the Arabic head/header/footer and
+    writes into the ar/ subdirectory, mirroring the English site 1:1 by
+    filename (ar/about.html is the Arabic counterpart of about.html)."""
+    html = head_ar(title, description, path, extra=extra_head) + "<body>\n" + header_ar(active, page=path) + body + footer_ar()
+    out_dir = os.path.join(os.path.dirname(__file__), "ar")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, path)
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print("built ar/" + path)
+
+
+# ---------------------------------------------------------------------------
+# Shared page-building helpers used by both generate.py (English) and
+# generate_ar.py (Arabic). Kept language-agnostic: callers pass in already
+# translated strings, except page_hero()'s breadcrumb "Home" link/label
+# which is controlled by the lang flag.
+# ---------------------------------------------------------------------------
+ACCENT_CYCLE = ["#14919b", "#7c4dbb", "#f0a93a"]  # teal, purple, gold
+
+
+def tint_icon(key, color):
+    """Returns an ICONS svg with its stroke/fill color overridden inline."""
+    return ICONS[key].replace("<svg ", f'<svg style="color:{color};" ', 1)
+
+
+def accent_card(icon_key, title, desc, color, extra=""):
+    return f"""<div class="card" data-reveal style="border-top:3px solid {color};">
+  <div class="icon-wrap" style="background:{color}1a;">{tint_icon(icon_key, color)}</div>
+  <h3>{title}</h3><p>{desc}</p>{extra}
+</div>"""
+
+
+def glow_blob(color, size="280px", **pos):
+    """pos: any of top/left/bottom/right as CSS length strings, e.g. top='-60px', left='-60px'."""
+    pos_css = "".join(f"{k}:{v};" for k, v in pos.items())
+    return f'<div style="position:absolute;{pos_css}width:{size};height:{size};background:{color};opacity:.16;border-radius:50%;filter:blur(60px);pointer-events:none;z-index:0;"></div>'
+
+
+def page_hero(eyebrow, title, desc, current_label, lang="en"):
+    home_href = "/ar/index.html" if lang == "ar" else "/index.html"
+    home_label = "الرئيسية" if lang == "ar" else "Home"
+    sep = "/"
+    return f"""<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="{home_href}">{home_label}</a> <span>{sep}</span> <span>{current_label}</span></div>
+    <div class="eyebrow" style="background:rgba(255,255,255,.12);color:var(--gold-400);">{eyebrow}</div>
+    <h1>{title}</h1>
+    <p>{desc}</p>
+  </div>
+</section>"""
+
+
+def faq_section(faqs, eyebrow="FAQs", title="Frequently asked questions"):
+    items = "\n".join(
+        f"""<div class="faq-item">
+  <button class="faq-q" aria-expanded="false"><span>{q}</span><span class="plus"></span></button>
+  <div class="faq-a"><p>{a}</p></div>
+</div>"""
+        for q, a in faqs
+    )
+    return f"""<section>
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">{eyebrow}</div>
+      <h2>{title}</h2>
+    </div>
+    <div style="max-width:820px;margin:0 auto;">
+      {items}
+    </div>
+  </div>
+</section>"""

@@ -170,6 +170,14 @@ section { padding: 88px 0; }
 .header-actions .phone-link svg { width: 18px; height: 18px; color: var(--teal-600); }
 @media (max-width: 1300px) { .header-actions .phone-link { display: none; } }
 
+.lang-switch {
+  font-weight: 700; font-size: 0.85rem; color: var(--navy-700); white-space: nowrap;
+  padding: 9px 16px; border-radius: var(--radius-pill); border: 1.5px solid var(--border);
+  transition: background .18s ease, border-color .18s ease;
+}
+.lang-switch:hover { background: var(--gray-100); border-color: var(--gray-300); }
+@media (max-width: 640px) { .lang-switch { padding: 8px 12px; font-size: 0.8rem; } }
+
 .nav-toggle {
   display: none; flex-direction: column; gap: 5px; padding: 8px; z-index: 110;
 }
@@ -568,3 +576,62 @@ hr.divider { border: none; border-top: 1px solid var(--border); margin: 56px 0; 
   .dest-row-arrow { order: 3; margin-left: auto; }
   .dest-row-tag { order: 4; width: 100%; }
 }
+
+/* ==========================================================================
+   Arabic / RTL support
+   Grid and flexbox layouts throughout this file mirror automatically once
+   `direction: rtl` is set (their track order follows inline-start, which
+   flips with direction), so most of the design system needs no change at
+   all. What's below covers the two things that never auto-flip: physical
+   left/right values (positioning, padding, borders, text-align) and the
+   Arabic typeface swap. The brand mark and "UK Study Abroad" wordmark stay
+   in Latin script and untouched by the flip.
+   ========================================================================== */
+html[dir="rtl"] {
+  --font-head: "Cairo", "Playfair Display", Georgia, serif;
+  --font-body: "Tajawal", "Cairo", -apple-system, "Segoe UI", sans-serif;
+}
+html[dir="rtl"] body { direction: rtl; }
+html[dir="rtl"] .brand-name { font-family: "Playfair Display", Georgia, serif; }
+html[dir="rtl"] .lang-switch { font-family: var(--font-body); }
+
+/* Skip link + focus utility */
+html[dir="rtl"] .skip-link { left: auto; right: 12px; }
+
+/* Hero decorative glows (purely aesthetic, mirrored for symmetry) */
+html[dir="rtl"] .hero::before { right: auto; left: -100px; }
+html[dir="rtl"] .hero::after { left: auto; right: -120px; }
+
+/* Hero visual badge: floats off the bottom-left corner in LTR */
+html[dir="rtl"] .hero-badge { left: auto; right: -20px; }
+
+/* Page-hero breadcrumb: neutral separator works either direction already */
+
+/* Step counter number sits top-right in LTR; mirror to top-left */
+html[dir="rtl"] .step::before { right: auto; left: 20px; }
+
+/* Timeline rail + connector dots */
+html[dir="rtl"] .timeline { padding-left: 0; padding-right: 36px; border-left: none; border-right: 2px solid var(--border); }
+html[dir="rtl"] .timeline-item::before { left: auto; right: -44px; }
+
+/* Tables and FAQ question row read start-aligned, i.e. right in RTL */
+html[dir="rtl"] .info-table th, html[dir="rtl"] .info-table td { text-align: right; }
+html[dir="rtl"] .faq-q { text-align: right; }
+
+/* Split-section floating stat card floats off the opposite corner in RTL */
+html[dir="rtl"] .split-media .float-card { right: auto; left: -18px; }
+
+/* Blog article body: list indents and blockquote rule follow the start edge */
+html[dir="rtl"] article.post-content ul { padding-left: 0; padding-right: 22px; }
+html[dir="rtl"] article.post-content blockquote { border-left: none; border-right: 4px solid var(--teal-500); }
+
+/* Destinations row hover nudge */
+html[dir="rtl"] .dest-row:hover { padding-left: 0; padding-right: 16px; }
+html[dir="rtl"] .dest-row-arrow { margin-left: 0; }
+@media (max-width: 640px) { html[dir="rtl"] .dest-row-arrow { margin-left: 0; margin-right: auto; } }
+
+/* Directional arrow icons: mirror so they still point toward reading-end */
+html[dir="rtl"] .card-link svg,
+html[dir="rtl"] .dest-row-arrow svg,
+html[dir="rtl"] .icon-arrow svg { transform: scaleX(-1); }
+.icon-arrow { display: inline-flex; }
