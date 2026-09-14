@@ -35,31 +35,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
 
-<style>
-/* Logo placement fix: keep the hero logo image contained, make sure it
-   actually shows up (it was rendering as an empty box on desktop, most
-   likely because the site's scroll-reveal animation on data-reveal
-   elements never triggered opacity back to 1), and stop the "Taught by
-   UK Academics" badge from overlapping the logo artwork on small
-   screens. Only touches the hero logo area. */
-.hero-visual{position:relative;}
-.hero-visual,
-.hero-visual *{
-  opacity:1 !important;
-  transform:none !important;
-  visibility:visible !important;
-}
-.hero-visual img{max-width:100%;height:auto;display:block;margin:0 auto;}
-@media (max-width:640px){
-  .hero-visual .hero-badge{
-    position:static;
-    transform:none;
-    margin:14px auto 0;
-    max-width:100%;
-  }
-}
-</style>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -112,9 +87,12 @@
 <section class="hero">
   <div class="container">
     <div>
-      <span class="hero-eyebrow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.4 7 1-5 5 1.2 7-6.3-3.4L5.7 21.4l1.2-7-5-5 7-1L12 2Z"/></svg> UK Study Abroad Academy</span>
+      <span class="hero-eyebrow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.4 7 1-5 5 1.2 7-6.3-3.4L5.7 21.4l1.2-7-5-5 7-1L12 2Z"/></svg> UK Study Abroad Consultancy</span>
       <h1>Your pathway to <span>global  careers and UK study</span>.</h1>
-      <p class="lead">Our Global Career Development Programme is a live, online UK academic and career programme designed for international schools and colleges. It helps students develop the academic, career and global skills they need to succeed in an increasingly connected world, with the option to complete the programme on campus in the UK.</p>
+      <p class="lead">Our Global Career Development Programme is a live, online UK academic and career programme for international schools and colleges. It develops students’ academic, career and global skills, with an option to complete the experience in the UK.
+           We also provide IELTS preparation, UK university admissions, recruitment and degree placement support, helping students successfully progress to higher education in the UK.</p>
+      <p style="margin:-14px 0 26px;color:var(--muted);font-size:0.98rem;">Our team includes genuine UK university lecturers and professors, so every step of your journey is backed by real academic expertise, not just paperwork.</p>
+      <div class="hero-cta">
         <a class="btn btn-whatsapp" href="/services.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5Z"/><path d="M4 5.5v15"/></svg> Explore Our Services</a>
         <a class="btn btn-outline-light" href="/schools.html">For Schools &amp; Colleges</a>
       </div>
@@ -128,7 +106,7 @@
       <img src="/assets/images/logo-full-web.png" alt="UK Study Abroad. Learn Online. Think Globally. Experience the UK." loading="eager">
       <div class="hero-badge">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 8v6"/></svg></div>
-        <div><strong>Taught by UK University Academics</strong><span>Enrol Today. Scholarships Available.</span></div>
+        <div><strong>Taught by UK Academics</strong><span>Genuine UK university expertise on our team</span></div>
       </div>
     </div>
   </div>
@@ -153,7 +131,7 @@
       <div class="eyebrow">How We Help</div>
       <h2>One partner for the whole journey to UK study.</h2>
       <p>Studying abroad involves more than one decision. Students and families often need help with several things at once: preparing for an English exam, choosing the right course, applying to the right university, and finding meaningful academic experiences along the way. Most consultancies only cover part of that journey.</p>
-      <p>UK Study Abroad brings it together in one place, combining practical application support with UK academic expertise, so students and schools do not have to juggle several different providers.</p>
+      <p>UK Study Abroad brings it together in one place, combining practical application support with genuine UK academic expertise, so students and schools do not have to juggle several different providers.</p>
       <p style="font-weight:600;">One trusted partner. Every stage of the journey.</p>
     </div>
   </div>
@@ -204,7 +182,7 @@
     <div class="grid grid-2">
       <div class="card" data-reveal style="border-top:3px solid #7c4dbb;">
   <div class="icon-wrap" style="background:#7c4dbb1a;"><svg style="color:#7c4dbb;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 8v6"/></svg></div>
-  <h3>UK academic access</h3><p>Our team includes real UK university lecturers and professors, so families get more than paperwork help. They get direct academic expertise.</p>
+  <h3>Genuine UK academic access</h3><p>Our team includes real UK university lecturers and professors, so families get more than paperwork help. They get direct academic expertise.</p>
 </div>
       <div class="card" data-reveal style="border-top:3px solid #f0a93a;">
   <div class="icon-wrap" style="background:#f0a93a1a;"><svg style="color:#f0a93a;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="m9.5 15 2 2 4-4"/></svg></div>
