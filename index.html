@@ -35,6 +35,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
 
+<style>
+/* Logo placement fix: keep the hero logo image contained, make sure it
+   actually shows up (it was rendering as an empty box on desktop, most
+   likely because the site's scroll-reveal animation on data-reveal
+   elements never triggered opacity back to 1), and stop the "Taught by
+   UK Academics" badge from overlapping the logo artwork on small
+   screens. Only touches the hero logo area. */
+.hero-visual{position:relative;}
+.hero-visual,
+.hero-visual *{
+  opacity:1 !important;
+  transform:none !important;
+  visibility:visible !important;
+}
+.hero-visual img{max-width:100%;height:auto;display:block;margin:0 auto;}
+@media (max-width:640px){
+  .hero-visual .hero-badge{
+    position:static;
+    transform:none;
+    margin:14px auto 0;
+    max-width:100%;
+  }
+}
+</style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
